@@ -32,48 +32,15 @@
                     <h2><span>Video dự án tiêu biểu</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
+                    @foreach($videos as $video)
                     <div class="item-picture">
                         <div class="item-picture-img">
-                            <img src="images/img/1.jpg">
+                            <img src="{{url($video->cover)}}">
                             <span class="play-icon"><i class="fas fa-play"></i></span>
                         </div>
-                        <h3>Marketing cho spa seon</h3>
+                        <h3>{{$video->title}}</h3>
                     </div>
-                    <div class="item-picture">
-                        <div class="item-picture-img">
-                            <img src="images/img/1.jpg">
-                            <span class="play-icon"><i class="fas fa-play"></i></span>
-                        </div>
-                        <h3>Marketing cho spa seon</h3>
-                    </div>
-                    <div class="item-picture">
-                        <div class="item-picture-img">
-                            <img src="images/img/1.jpg">
-                            <span class="play-icon"><i class="fas fa-play"></i></span>
-                        </div>
-                        <h3>Marketing cho spa seon</h3>
-                    </div>
-                    <div class="item-picture">
-                        <div class="item-picture-img">
-                            <img src="images/img/1.jpg">
-                            <span class="play-icon"><i class="fas fa-play"></i></span>
-                        </div>
-                        <h3>Marketing cho spa seon</h3>
-                    </div>
-                    <div class="item-picture">
-                        <div class="item-picture-img">
-                            <img src="images/img/1.jpg">
-                            <span class="play-icon"><i class="fas fa-play"></i></span>
-                        </div>
-                        <h3>Marketing cho spa seon</h3>
-                    </div>
-                    <div class="item-picture">
-                        <div class="item-picture-img">
-                            <img src="images/img/1.jpg">
-                            <span class="play-icon"><i class="fas fa-play"></i></span>
-                        </div>
-                        <h3>Marketing cho spa seon</h3>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
@@ -84,41 +51,15 @@
                     <h2><span>Hình ảnh khách hàng</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
+                  @foreach($photos as $photo)
                     <div class="item-picture">
                         <div class="item-picture-img">
-                            <img src="images/img/2.jpg">
+                            <img src="{{url($photo->path)}}">
 
                         </div>
-                        <h3>Marketing cho spa seon</h3>
+                        <h3>{{$photo->title}}</h3>
                     </div>
-                    <div class="item-picture">
-                        <div class="item-picture-img">
-                            <img src="images/img/2.jpg">
-
-                        </div>
-                        <h3>Marketing cho spa seon</h3>
-                    </div>
-                    <div class="item-picture">
-                        <div class="item-picture-img">
-                            <img src="images/img/2.jpg">
-
-                        </div>
-                        <h3>Marketing cho spa seon</h3>
-                    </div>
-                    <div class="item-picture">
-                        <div class="item-picture-img">
-                            <img src="images/img/2.jpg">
-
-                        </div>
-                        <h3>Marketing cho spa seon</h3>
-                    </div>
-                    <div class="item-picture">
-                        <div class="item-picture-img">
-                            <img src="images/img/2.jpg">
-
-                        </div>
-                        <h3>Marketing cho spa seon</h3>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>

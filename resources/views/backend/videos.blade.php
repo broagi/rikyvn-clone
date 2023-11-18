@@ -2,7 +2,7 @@
   <x-slot name="header">
       <h2 class="font-semibold text-xl text-gray-800 leading-tight">
           {{ __('Video') }}
-          <a class="text-sm text-pink-600" href="/dashboard/video/upload">Upload</a>
+          <a class="float-right text-sm text-pink-600" href="/dashboard/video/upload"><i class="fa fa-plus"></i> UPLOAD</a>
       </h2>
   </x-slot>
 

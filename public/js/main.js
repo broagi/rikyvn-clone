@@ -106,6 +106,11 @@ $("#file-upload").change(function(e){
   $("#file-upload-name").html(e.target.files[0].name);
 });
 
+$("#cover-upload").change(function(e){
+  // console.log(e.target.files[0]);
+  $("#cover-upload-name").html(e.target.files[0].name);
+});
+
 $("#contact-form").submit((e) => {
   e.preventDefault();
   fetch('/api/contact', {

@@ -13,5 +13,6 @@ class Video extends Model
       'path',
       'title',
       'ordering',
+      'cover'
   ];
 }

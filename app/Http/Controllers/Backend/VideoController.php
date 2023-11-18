@@ -36,9 +36,16 @@ class VideoController extends Controller
                         ->withInput();
     }
     $path = $request->file('attachment')->store('public/attachment');
+
+    $cover = '';
+    if ($request->hasFile('cover')) {
+      $cover = $request->file('cover')->store('public/attachment');
+    }
+
     Video::create([
       "title" => $request->get('title'),
-      "path" => Storage::url($path)
+      "path" => Storage::url($path),
+      "cover" => Storage::url($cover),
     ]);
     return redirect()->route('videos')->with('status', 'Video uploaded!');
   }
@@ -54,7 +61,14 @@ class VideoController extends Controller
       $video->path = Storage::url($path);
     }
 
-    $video->fill($request->all());
+    if ($request->hasFile('cover')) {
+      $cover = $request->file('cover')->store('public/attachment');
+      Log::info($cover);
+      $video->cover = Storage::url($cover);
+      Log::info($video->cover);
+    }
+
+    $video->title = $request->get('title');
 
     $video->save();
     return redirect()->route('videos')->with('status', 'Video updated!');
