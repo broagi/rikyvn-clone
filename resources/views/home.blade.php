@@ -253,4 +253,19 @@
         <a href="#" class="btn btn-primary"><i class="fas fa-user"></i> Đăng Ký</a>
         <a href="#" class="btn btn-danger">Zalo 09327438435</a>
     </div>
+
+    <div class="popup-album show">
+      <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
+      <div class="bg-popup-album"></div>
+      <div class="slider-for">
+        @foreach($photos as $photo)
+        <div class="item-for"><img src="{{url($photo->path)}}"></div>
+        @endforeach()
+      </div>
+      <div class="slider-nav">
+        @foreach($photos as $photo)
+        <div class="item-nav"><img src="{{url($photo->path)}}"></div>
+        @endforeach()
+      </div>
+    </div>
 @endsection

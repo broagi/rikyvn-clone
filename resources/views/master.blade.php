@@ -7,12 +7,12 @@
     <meta name=viewport content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css" >
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/font-awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/slick.css" >
+    <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/responsive.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
@@ -43,11 +43,11 @@
 
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=2240291739529093&autoLogAppEvents=1" nonce="mLFkBIqK"></script>
-    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="js/locomotive-scroll.js" type="text/javascript"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/slick.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/locomotive-scroll.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/slick.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
