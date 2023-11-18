@@ -254,7 +254,7 @@
         <a href="#" class="btn btn-danger">Zalo 09327438435</a>
     </div>
 
-    <div class="popup-album show">
+    <div class="popup-album">
       <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
       <div class="bg-popup-album"></div>
       <div class="slider-for">
