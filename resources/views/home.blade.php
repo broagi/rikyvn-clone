@@ -222,9 +222,7 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <img src="images/logo.svg">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book.</p>
+                        <p>Riky Marketing là công ty tư vấn, huấn luyện đào tạo Marketing Online tại Việt Nam. Hỗ trợ các Cá Nhân, Doanh Nghiệp, Nghệ Sĩ nắm bắt cơ hội kinh doanh trực tuyến và khai thác tối đa ứng dụng của Internet vào hoạt động kinh doanh.</p>
                     </div>
                     <div class="col-sm-4">
                         <h3>Thông Tin liên hệ</h3>
