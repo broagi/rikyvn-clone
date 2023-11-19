@@ -249,7 +249,7 @@
 
     <div class="box-contact-mobile">
         <a href="#dangky" class="btn btn-primary"><i class="fas fa-user"></i> Đăng Ký</a>
-        <a href="https://zalo.me/{{$settings['hotline']}}" class="btn btn-danger">Zalo {{ $settings['hotline'] }}</a>
+        <a href="https://zalo.me/{{$settings['hotline']}}" target="_blank" class="btn btn-danger">Zalo {{ $settings['hotline'] }}</a>
     </div>
 
     <div class="popup-album">
