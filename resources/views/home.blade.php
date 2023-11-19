@@ -250,8 +250,8 @@
     </div>
 
     <div class="box-contact-mobile">
-        <a href="#" class="btn btn-primary"><i class="fas fa-user"></i> Đăng Ký</a>
-        <a href="#" class="btn btn-danger">Zalo 09327438435</a>
+        <a href="#dangky" class="btn btn-primary"><i class="fas fa-user"></i> Đăng Ký</a>
+        <a href="https://zalo.me/{{$settings['hotline']}}" class="btn btn-danger">Zalo {{ $settings['hotline'] }}</a>
     </div>
 
     <div class="popup-album">
