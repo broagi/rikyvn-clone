@@ -479,6 +479,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   border:0;
   border-radius: 0;
   float: left;
+  white-space: nowrap;
  }
  .slider-picture .slick-list {
   overflow:visible;
