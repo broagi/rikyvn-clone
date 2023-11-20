@@ -354,6 +354,8 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   font-size: 0;
   transition:all 0.3s ease-in-out;
   border:0;
+  margin-top: 0;
+  padding: 0;
 }
 .slider-picture  >.slick-arrow:hover {
   background-color:#002F58;
