@@ -215,6 +215,10 @@ $(document).ready(function () {
     $(".close-popup").click(function () {
         $(".popup-album").removeClass("show");
         $(".popup-album-video").removeClass("show");
+
+        $("video").each(function() {
+          $(this).get(0).pause();
+      });
     });
 
     $(".item-picture-video").click(function () {
