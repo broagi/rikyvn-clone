@@ -224,7 +224,6 @@ $(document).ready(function () {
     $(".item-picture-video").click(function () {
         $(".popup-album-video").addClass("show");
         $(".slider-for").slick("slickGoTo", $(this).data("id"));
-        $(".slider-for").resize();
         $(".popup-album-video .slick-active").find("video").get(0).play();
     });
 
@@ -232,5 +231,6 @@ $(document).ready(function () {
         $(".popup-album-photo").addClass("show");
         $(".slider-for").slick("slickGoTo", $(this).data("id"));
         $(".slider-for").resize();
+        $(".slider-for").slick('setDimensions');
     });
 });
