@@ -225,6 +225,8 @@ $(document).ready(function () {
         $(".popup-album-video").addClass("show");
         $(".slider-for").slick("slickGoTo", $(this).data("id"));
         $(".popup-album-video .slick-active").find("video").get(0).play();
+        $(".slider-for").resize();
+        $(".slider-for").slick('setDimensions');
     });
 
     $(".item-picture-photo").click(function () {
