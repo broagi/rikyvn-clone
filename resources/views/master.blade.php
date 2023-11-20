@@ -18,7 +18,31 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <link rel="icon" href="{{ url('images/logo.svg') }}">
-    <title>RiKy.vn</title>
+    <title>{{$setting->site_name}}</title>
+
+    <meta name="keywords" content="{{$setting->site_keyword}}" />
+	<meta property="og:url" content="<?= request()->url()  ?>" />
+	<meta property="og:type" content="{{$config->site_name}}" />
+	<meta property="og:title" content="{{$config->site_name}}" />
+	<meta property="og:description" content="{{$site_description}}" />
+	<meta property="og:image" content="{{ url('images/logo.svg') }}" />
+
+
+	<link rel="canonical" href="<?= request()->url()  ?>" />
+
+	<meta name="twitter:card" content="{{$setting->site_name}}" />
+	<meta name="twitter:title" content="{{$setting->site_name}}" />
+	<meta name="copyright" content="{{$setting->site_name}}" />
+	<meta name="author" content="{{$setting->site_name}}" />
+	<meta name="GENERATOR" content="{{$setting->site_name}}" />
+	<meta name="twitter:description" content="{{$site_description}}" />
+	<meta name="DC.description" content="{{$site_description}}" />
+	<meta name="twitter:site" publiccontent="{{ request()->fullUrl() }}" />
+	<meta name="DC.language" scheme="ISO639-1" content="en" />
+	<meta name="DC.identifier" content="{{ request()->fullUrl() }}" />
+	<meta name="DC.subject" content="{{$setting->site_keyword}}" />
+	<meta name="twitter:image" content="{{ url('images/logo.svg') }}" />
+
 <body>
 
     <div class="header i-item top-show">
