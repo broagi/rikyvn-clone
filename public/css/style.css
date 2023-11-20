@@ -372,6 +372,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   font-size: 26px;
   font-family: 'Font Awesome 5 Free';
   font-weight: 700;
+  color: black;
 }
 .slick-next::before {
   content: "\f105";
@@ -537,19 +538,6 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 .slick-prev {
   left: -60px;
 }
-.slick-next::before, .slick-prev::before {
-  font-family: 'icomoon' !important;
-  display: inline-block;
-  color: #999;
-}
-.slick-next::before {
-  content: "\e912";
-  margin-left: 2px;
-}
-.slick-prev::before {
-  content: "\e914";
-  margin-left: 0px;
-}
 .view-all {
   padding: 10px 20px;
   margin-top: 15px;
@@ -680,3 +668,16 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   cursor: pointer;
 }
 
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 75px;
+	height: 0;
+}
+.video-wrapper video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

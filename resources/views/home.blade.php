@@ -21,7 +21,7 @@
                         data-svg-origin="684.5000061035156 684.4" transform="matrix(1,0,0,1,0,0)" style=""></polygon>
                 </svg></div>
             <div class="txt-banner">
-                <div class="box-slogan intro__title-line i-item top-show">GẶP MẶT - KẾT NỐI - ĐỊNH HƯỚNG</div>
+                {{-- <div class="box-slogan intro__title-line i-item top-show">GẶP MẶT - KẾT NỐI - ĐỊNH HƯỚNG</div> --}}
                 <h1 class="intro__title-line i-item top-show">MARKETING ONLINE CÙNG CHUYÊN GIA</h1>
                 <a href="#chuyengia" class="btn btn-primary intro__title-line i-item top-show">Kết nối chuyên gia</a>
             </div>
@@ -32,8 +32,8 @@
                     <h2><span>Video dự án tiêu biểu</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
-                    @foreach($videos as $video)
-                    <div class="item-picture">
+                    @foreach($videos as $key=>$video)
+                    <div class="item-picture item-picture-video" data-id="{{$key}}">
                         <div class="item-picture-img">
                             <img src="{{url($video->cover)}}">
                             <span class="play-icon"><i class="fas fa-play"></i></span>
@@ -51,8 +51,8 @@
                     <h2><span>Hình ảnh khách hàng</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
-                  @foreach($photos as $photo)
-                    <div class="item-picture">
+                  @foreach($photos as $key=>$photo)
+                    <div class="item-picture item-picture-photo" data-id="{{$key}}">
                         <div class="item-picture-img">
                             <img src="{{url($photo->path)}}">
 
@@ -249,10 +249,10 @@
 
     <div class="box-contact-mobile">
         <a href="#dangky" class="btn btn-primary"><i class="fas fa-user"></i> Đăng Ký</a>
-        <a href="https://zalo.me/{{$settings['hotline']}}" target="_blank" class="btn btn-danger">Zalo {{ $settings['hotline'] }}</a>
+        <a href="https://zalo.me/{{$settings['hotline']}}" target="_blank" class="btn btn-danger">Zalo</a>
     </div>
 
-    <div class="popup-album">
+    <div class="popup-album popup-album-photo">
       <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
       <div class="bg-popup-album"></div>
       <div class="slider-for">
@@ -263,6 +263,21 @@
       <div class="slider-nav">
         @foreach($photos as $photo)
         <div class="item-nav"><img src="{{url($photo->path)}}"></div>
+        @endforeach()
+      </div>
+    </div>
+
+    <div class="popup-album popup-album-video">
+      <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
+      <div class="bg-popup-album"></div>
+      <div class="slider-for">
+        @foreach($videos as $video)
+        <div class="item-for"><div class="video-wrapper"><video controls width="600" height="400" src="{{url($video->path)}}"></video></div></div>
+        @endforeach()
+      </div>
+      <div class="slider-nav">
+        @foreach($videos as $video)
+        <div class="item-nav"><img src="{{url($video->cover)}}"></div>
         @endforeach()
       </div>
     </div>
