@@ -26,7 +26,7 @@
                 <a href="#chuyengia" class="btn btn-primary intro__title-line i-item top-show">Kết nối chuyên gia</a>
             </div>
         </section>
-        <section class="pictures-home padding-main" id="hinhanh">
+        <section class="pictures-home padding-main" id="videos">
             <div class="container">
                 <div class="title-main i-item top-show">
                     <h2><span>Video dự án tiêu biểu</span></h2>
@@ -174,9 +174,6 @@
                                 việc phát triển kinh doanh trên nền tảng online. </p>
                         </div>
                     </div>
-                </div>
-                <div class="text-center">
-                    <a href="#chuyengia" class="btn btn-primary">Kết nối chuyên gia</a>
                 </div>
             </div>
         </section>

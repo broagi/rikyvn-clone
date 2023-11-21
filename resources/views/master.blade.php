@@ -62,6 +62,7 @@
                         <li><a href="#gioithieu"><span>Giới thiệu</span></a></li>
                         <li><a href="#chuyengia"><span>Chuyên gia</span></a></li>
                         <li><a href="#hinhanh"><span>Hình ảnh</span></a></li>
+                        <li><a href="#videos"><span>Videos</span></a></li>
                         <li><a href="#dangky" class="a-singup">Đăng ký</a></li>
                     </ul>
                 </div>
