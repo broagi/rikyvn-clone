@@ -1,8 +1,9 @@
 
 # rikyvn-clone
 
-# Installation
+## Installation
 
+```bash
 unzip vendor.zip
 
 php artisan migrate
@@ -14,14 +15,10 @@ php artisan storage:link
 npm install
 
 npm run dev
+```
 
-# Start
+## Start
 
+```bash
 php artisan serve
-
-# Dashboard
-
-/login
-
-admin@riky.vn / password
-
+```
