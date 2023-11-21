@@ -104,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box-section box-red">
+            <div class="box-section box-red pt-0 pb-0 lg:pt-20 lg:pb-20">
                 <div class="row row-center">
                     <div class="col-sm-6 order-12 i-item right-show">
                         <img src="images/img/1.jpg" width="100%" class="image-mask">
