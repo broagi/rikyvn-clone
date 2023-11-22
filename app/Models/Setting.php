@@ -14,4 +14,14 @@ class Setting extends Model
       'value',
       'name',
   ];
+
+  static function getSiteSettings() {
+    $settings = Setting::all();
+    $arr = [];
+    foreach($settings as $setting) {
+      $arr[$setting->key] = $setting->value;
+    }
+
+    return $arr;
+  }
 }
