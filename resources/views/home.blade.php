@@ -2,8 +2,7 @@
 @section('content')
     <div class="wrapper">
         <section class="banner">
-            <video src="{{ url($settings['welcome_video']) }}" id="background-video" autoplay loop muted
-                poster="images/img/3.jpg">
+            <video src="{{ url($settings['welcome_video']) }}" id="background-video" autoplay loop muted>
             </video>
             <div class="bg-svg"><svg version="1.1" id="_glob_shape-fake" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 811.8 811.8"
