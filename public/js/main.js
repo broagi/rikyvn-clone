@@ -221,23 +221,35 @@ $(document).ready(function () {
         $(".popup-album").removeClass("show");
         $(".popup-album-video").removeClass("show");
 
-        $("video").each(function () {
+        $(".popup-album-video video").each(function () {
             $(this).get(0).pause();
         });
     });
 
     $(".item-picture-video").click(function () {
         $(".popup-album-video").addClass("show");
-        $(".slider-for").slick("slickGoTo", $(this).data("id"));
-        $(".popup-album-video .slick-active").find("video").get(0).play();
-        $(".slider-for").resize();
-        $(".slider-for").slick("setDimensions");
+        $(".popup-album-video .slider-for").slick(
+            "slickGoTo",
+            $(this).data("id")
+        );
+        $(".popup-album-video .slider-for").resize();
+        $(".popup-album-video .slider-for").slick("setDimensions");
+    });
+
+    $(".popup-album-video .slider-for").on("afterChange", () => {
+        // $(".popup-album-video .slick-active").find("video").get(0).play();
+        $(".popup-album-video video").each(function () {
+            $(this).get(0).pause();
+        });
     });
 
     $(".item-picture-photo").click(function () {
         $(".popup-album-photo").addClass("show");
-        $(".slider-for").slick("slickGoTo", $(this).data("id"));
-        $(".slider-for").resize();
-        $(".slider-for").slick("setDimensions");
+        $(".popup-album-photo .slider-for").slick(
+            "slickGoTo",
+            $(this).data("id")
+        );
+        $(".popup-album-photo .slider-for").resize();
+        $(".popup-album-photo .slider-for").slick("setDimensions");
     });
 });
