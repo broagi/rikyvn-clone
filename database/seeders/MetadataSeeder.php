@@ -26,6 +26,11 @@ class MetadataSeeder extends Seeder
        ['key' => 'site_keyword',
        'name'=> 'Site Keyword',
         'value' => 'Marketing, Ecommerce, Training',
+      ],
+      ['key' => 'site_logo',
+       'name'=> 'Site Logo',
+        'value' => '',
+        'type' => 'photo'
        ]
         ]);
     }

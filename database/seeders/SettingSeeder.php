@@ -30,6 +30,7 @@ class SettingSeeder extends Seeder
        ['key' => 'welcome_video',
        'name'=> 'Welcome Video',
         'value' => '',
+        'type' => 'video'
        ]
         ]);
     }
