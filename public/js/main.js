@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     $(".slider-picture").slick({
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         arrows: true,
         dots: false,
         infinite: false,
