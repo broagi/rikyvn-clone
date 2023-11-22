@@ -22,7 +22,7 @@
             <div class="txt-banner">
                 {{-- <div class="box-slogan intro__title-line i-item top-show">GẶP MẶT - KẾT NỐI - ĐỊNH HƯỚNG</div> --}}
                 <h1 class="intro__title-line i-item top-show">MARKETING ONLINE CÙNG CHUYÊN GIA</h1>
-                <a href="#chuyengia" class="btn btn-primary intro__title-line i-item top-show">Kết nối chuyên gia</a>
+                <a href="#dangky" class="btn btn-primary intro__title-line i-item top-show">Kết nối chuyên gia</a>
             </div>
         </section>
         <section class="pictures-home padding-main" id="videos">
