@@ -268,7 +268,7 @@
       <div class="bg-popup-album"></div>
       <div class="slider-for">
         @foreach($videos as $video)
-        <div class="item-for"><div class="video-wrapper"><video controls width="600" height="400" src="{{url($video->path)}}"></video></div></div>
+        <div class="item-for"><div class="video-wrapper"><video preload="auto" controls width="600" height="400" src="{{url($video->path)}}"></video></div></div>
         @endforeach()
       </div>
       <div class="slider-nav">
