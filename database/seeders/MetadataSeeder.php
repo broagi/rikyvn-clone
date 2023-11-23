@@ -31,6 +31,11 @@ class MetadataSeeder extends Seeder
        'name'=> 'Site Logo',
         'value' => '',
         'type' => 'photo'
+    ],
+    ['key' => 'site_favicon',
+       'name'=> 'Site Favicon',
+        'value' => '',
+        'type' => 'photo'
        ]
         ]);
     }

@@ -10,7 +10,7 @@ $settings = App\Models\Setting::getSiteSettings();
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <link rel="icon" href="{{ $settings['site_logo'] ?? url('images/logo.png') }}">
+        <link rel="icon" href="{{ $settings['site_favicon'] ?? url('images/logo.png') }}">
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">

@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
-    <link rel="icon" href="{{ $settings['site_logo'] ?? url('images/logo.png') }}">
+    <link rel="icon" href="{{ $settings['site_favicon'] ?? url('images/logo.png') }}">
 
 
 
@@ -27,7 +27,7 @@
     <meta property="og:type" content="{{ $settings['site_name'] }}" />
     <meta property="og:title" content="{{ $settings['site_name'] }}" />
     <meta property="og:description" content="{{ $settings['site_description'] }}" />
-    <meta property="og:image" content="{{ url('images/logo.svg') }}" />
+    <meta property="og:image" content="{{$settings['site_logo'] ?? url('images/logo.svg')}}" />
 
 
     <link rel="canonical" href="<?= request()->url() ?>" />
@@ -43,7 +43,7 @@
     <meta name="DC.language" scheme="ISO639-1" content="en" />
     <meta name="DC.identifier" content="{{ request()->fullUrl() }}" />
     <meta name="DC.subject" content="{{ $settings['site_keyword'] }}" />
-    <meta name="twitter:image" content="{{ url('images/logo.svg') }}" />
+    <meta name="twitter:image" content="{{$settings['site_logo'] ?? url('images/logo.svg')}}" />
 
     @yield('metadata')
 <body>
@@ -51,7 +51,7 @@
     <div class="header i-item top-show">
         <div class="container">
             <div class="logo">
-                <a href="#"><img src="images/logo.svg"></a>
+                <a href="#"><img src="{{$settings['site_logo'] ?? url('images/logo.svg')}}"></a>
             </div>
             <div class="right-header">
                 <div class="menu">
