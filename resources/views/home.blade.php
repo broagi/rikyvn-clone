@@ -86,7 +86,7 @@
             <div class="box-section box-green">
                 <div class="row row-center">
                     <div class="col-sm-6 i-item left-show">
-                        <img src="images/img/1.jpg" width="100%" class="image-mask">
+                        <img src="images/img/10.jpg" width="100%" class="image-mask">
                     </div>
                     <div class="col-sm-6 i-item right-show">
                         <div class="title-main">
@@ -106,7 +106,7 @@
             <div class="box-section box-red pt-0 pb-0 pt-lg-5 pb-lg-5">
                 <div class="row row-center">
                     <div class="col-sm-6 order-12 i-item right-show">
-                        <img src="images/img/1.jpg" width="100%" class="image-mask">
+                        <img src="images/img/10.jpg" width="100%" class="image-mask">
                     </div>
                     <div class="col-sm-6 i-item left-show">
                         <div class="title-main">
@@ -123,7 +123,7 @@
             <div class="box-section box-green">
                 <div class="row row-center">
                     <div class="col-sm-6 i-item left-show">
-                        <img src="images/img/1.jpg" width="100%" class="image-mask">
+                        <img src="images/img/11.jpg" width="100%" class="image-mask">
                     </div>
                     <div class="col-sm-6 i-item right-show">
                         <div class="title-main">
