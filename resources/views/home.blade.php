@@ -96,8 +96,8 @@
                             <li>Bạn đang tìm hiểu hoặc đang Kinh Doanh Online nhưng chưa biết bắt đầu từ đâu ?</li>
                             <li>Bạn có các thắc mắc về quảng cáo, muốn định hướng và cần các chuyên gia giúp đỡ giải đáp.
                             </li>
-                            <li>Bạn đang phân vân giữa tự chạy hoặc đi thuê người chạy ? cái nào tốt hơn ?</li>
-                            <li>Bạn đang tự chạy quảng cáo nhưng chưa biết liệu đang làm như hiện tại đã tốt chưa ? cần làm
+                            <li>Bạn đang phân vân giữa tự chạy hoặc đi thuê người chạy ? Cái nào tốt hơn ?</li>
+                            <li>Bạn đang tự chạy quảng cáo nhưng chưa biết liệu đang làm như hiện tại đã tốt chưa ? Cần làm
                                 gì để tốt hơn.</li>
                         </ul>
                     </div>
@@ -131,13 +131,12 @@
                         </div>
                         <ul>
                             <li>Quảng cáo online bắt đầu từ đâu và làm như thế nào ?</li>
-                            <li>Tự chạy quảng cáo tốt hơn hay nên đi thuê các nhà quảng cáo chạy tốt hơn ?</li>
+                            <li>Tự chạy quảng cáo và đi thuê đơn vị chạy quảng cáo, phương án nào tốt hơn ?</li>
                             <li>Khi nào nên đi thuê, khi nào nên tự chạy ?</li>
-                            <li>Các lý do mà bạn đang tự chạy quăng tiền qua cửa sổ cho quảng cáo mỗi ngày mà quan trọng là
-                                SHOP|DOANH NGHIỆP ĐANG KHÔNG HỀ HAY BIẾT.</li>
+                            <li>Tìm ra lý do mà Shop/ Doanh nghiệp đang lãng phí ngân sách trong quá trình chạy quảng cáo mỗi ngày mà bạn KHÔNG HỀ HAY BIẾT Tìm ra lý do mà Shop/ Doanh nghiệp đang lãng phí ngân sách trong quá trình chạy quảng cáo mỗi ngày mà bạn KHÔNG HỀ HAY BIẾT.</li>
                             <li>Chia sẽ về các hình thức chạy quảng cáo online và cách làm phù hợp với ngành hàng của bạn.
                             </li>
-                            <li>Trả lời và giải đáp các thắc mắc của các bạn về kinh doanh online</li>
+                            <li>Trả lời và giải đáp các thắc mắc của các bạn về kinh doanh online.</li>
                         </ul>
                     </div>
                 </div>
@@ -156,7 +155,7 @@
                             <h3>Coach Harry An Pham</h3>
                             <div class="staff-member">Nhà huấn luyện Digital Marketing</div>
                             <p>Khởi nguồn được đào tạo trực tiếp từ Facebook Việt Nam từ năm 2015. Nhà Huấn Luyện đã có hơn
-                                7 năm kinh nghiệm trong ngành Marketing và trên 5 năm kinh nghiệm đào tạo, huấn luyên, tư
+                                7 năm kinh nghiệm trong ngành Marketing và trên 5 năm kinh nghiệm đào tạo, huấn luyện, tư
                                 vấn cho các cá nhân, tổ chức, doanh nghiệp về Marketing Online. Hiện tại, anh đang quản lý
                                 và chạy quảng cáo cho nhiều tài khoản quảng cáo ngân sách lớn cho các doanh nghiệp lớn tại
                                 Việt Nam.</p>
@@ -182,7 +181,7 @@
                 <div class="signup-home i-item  zoomin" id="dangky">
                     <div class="form-sign">
                         <h3>Thông tin đăng ký</h3>
-                        <p>Chương trình được tại trợ MIỄN PHÍ bởi Riky.vn</p>
+                        <p>Chương trình được tài trợ MIỄN PHÍ bởi Riky.vn</p>
                         <form id="contact-form">
                             <div class="row">
                                 <div class="col-sm-6">
