@@ -27,7 +27,7 @@
         <section class="pictures-home padding-main" id="videos">
             <div class="container">
                 <div class="title-main i-item top-show">
-                    <h2><span>Video dự án tiêu biểu</span></h2>
+                    <h2><span>Video Dự Án Tiêu Biểu</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
                     @foreach ($videos as $key => $video)
@@ -46,7 +46,7 @@
         <section class="pictures-home padding-main  box-blue" id="hinhanh">
             <div class="container">
                 <div class="title-main i-item top-show">
-                    <h2><span>Hình ảnh khách hàng</span></h2>
+                    <h2><span>Hình Ảnh Hoạt Động</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
                     @foreach ($photos as $key => $photo)
