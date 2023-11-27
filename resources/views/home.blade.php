@@ -271,9 +271,11 @@
         <div class="slider-for">
             @foreach ($videos as $video)
                 <div class="item-for">
-                    <div class="video-wrapper"><video preload="metadata" controls width="600" height="400"
-                            src="{{ url($video->path) }}"></video></div>
-                </div>
+                   <div class="item-for-dialog">
+                      <div class="video-wrapper"><video preload="metadata" controls width="600" height="400"
+                              src="{{ url($video->path) }}"></video></div>
+                  </div>
+                   </div>
             @endforeach()
         </div>
         <div class="slider-nav">

@@ -617,6 +617,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 }
 .slider-nav {
   padding: 10px;
+  width: 100vh;
 }
 .slider-nav .slick-slide {
   padding: 0 5px;
@@ -670,7 +671,15 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 .item-pic.album-a  {
   cursor: pointer;
 }
-
+.item-for-dialog {
+  max-width: 85%;
+  max-height: 90%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 .video-wrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
