@@ -211,20 +211,11 @@ $(document).ready(function () {
     });
     $(".slider-nav").slick({
         slidesToShow: 8,
-        slidesToScroll: 8,
+        slidesToScroll: 1,
         asNavFor: ".slider-for",
         centerMode: true,
         focusOnSelect: true,
-        responsive: [
-          {
-              breakpoint: 600,
-              settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
-              },
-          }
-      ],
-        // variableWidth: true,
+        variableWidth: true,
     });
     $(".close-popup").click(function () {
         $(".popup-album").removeClass("show");

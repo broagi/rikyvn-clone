@@ -168,6 +168,9 @@
     .box-member p {
       height: 250px;
     }
+    .item-for-dialog {
+      height: 50%;
+    }
 }
 @media all and (min-width: 320px) and (max-width: 768px) {
 	.item-picture img {
