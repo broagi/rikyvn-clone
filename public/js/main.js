@@ -210,12 +210,21 @@ $(document).ready(function () {
         asNavFor: ".slider-nav",
     });
     $(".slider-nav").slick({
-        slidesToShow: 100,
-        slidesToScroll: 1,
+        slidesToShow: 8,
+        slidesToScroll: 8,
         asNavFor: ".slider-for",
         centerMode: true,
         focusOnSelect: true,
-        variableWidth: true,
+        responsive: [
+          {
+              breakpoint: 600,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+              },
+          }
+      ],
+        // variableWidth: true,
     });
     $(".close-popup").click(function () {
         $(".popup-album").removeClass("show");
