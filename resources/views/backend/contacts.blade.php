@@ -14,6 +14,7 @@
                             <th class="border-b  font-medium px-4 py-4 text-left">Name</th>
                             <th class="border-b  font-medium px-4 py-4 text-left">Phone Number</th>
                             <th class="border-b  font-medium px-4 py-4 text-left">Description</th>
+                            <th class="border-b  font-medium px-4 py-4 text-left">Date</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white">
@@ -22,6 +23,7 @@
                                 <td class="border-b px-4 py-4 ">{{ $contact->name }}</td>
                                 <td class="border-b px-4 py-4 ">{{ $contact->phone_number }}</td>
                                 <td class="border-b px-4 py-4 ">{{ $contact->description }}</td>
+                                <td class="border-b px-4 py-4 ">{{ $contact->created_at }}</td>
                             </tr>
                         @endforeach
                     </tbody>
