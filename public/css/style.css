@@ -617,7 +617,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 }
 .slider-nav {
   padding: 10px;
-  width: 100vh;
+  width: 100vw;
 }
 .slider-nav .slick-slide {
   padding: 0 5px;
