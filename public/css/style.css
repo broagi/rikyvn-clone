@@ -674,6 +674,8 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 .item-for-dialog {
   max-width: 85%;
   max-height: 90%;
+  width: 85%;
+  height: 50%;
   display: inline-block;
   position: absolute;
   top: 50%;
