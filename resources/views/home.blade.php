@@ -5,8 +5,7 @@
             <video src="{{ url($settings['welcome_video']) }}" id="background-video" autoplay loop muted>
             </video>
             <div class="bg-svg"><svg version="1.1" id="_glob_shape-fake" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 811.8 811.8"
-                    xml:space="preserve">
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 811.8 811.8" xml:space="preserve">
                     <polygon stroke="#fff" opacity="1" fill="none"
                         points="421.3,1 389.7,1 357.9,3.5 326.5,8.5 295.6,15.9 265.4,25.7 236,37.9 207.7,52.3 180.6,68.9 154.9,87.6 130.7,108.2 108.2,130.7 87.6,154.9 68.9,180.6 52.3,207.7 37.9,236 25.7,265.4 15.9,295.6 8.5,326.5 3.5,357.9 1,389.7 1,421.3 3.5,453.1 8.5,484.5 15.9,515.4 25.7,545.6 37.9,575 52.3,603.3 68.9,630.4 87.6,656.1 108.2,680.3 130.7,702.8 154.9,723.4 180.6,742.1 207.7,758.7 236,773.1 265.4,785.3 295.6,795.1 326.5,802.5 357.9,807.5 389.7,810 421.3,810 453.1,807.5 484.5,802.5 515.4,795.1 545.6,785.3 575,773.1 603.3,758.7 630.4,742.1 656.1,723.4 680.3,702.8 702.8,680.3 723.4,656.1 742.1,630.4 758.7,603.3 773.1,575 785.3,545.6 795.1,515.4 802.5,484.5 807.5,453.1 810,421.3 810,389.7 807.5,357.9 802.5,326.5 795.1,295.6 785.3,265.4 773.1,236 758.7,207.7 742.1,180.6 723.4,154.9 702.8,130.7 680.3,108.2 656.1,87.6 630.4,68.9 603.3,52.3 575,37.9 545.6,25.7 515.4,15.9 484.5,8.5 453.1,3.5"
                         data-svg-origin="412.49999990463255 412.3000000953674" transform="matrix(1,0,0,1,0,0)"
@@ -31,14 +30,14 @@
                     <h2><span>Video dự án tiêu biểu</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
-                    @foreach($videos as $key=>$video)
-                    <div class="item-picture item-picture-video" data-id="{{$key}}">
-                        <div class="item-picture-img">
-                            <img src="{{url($video->cover)}}">
-                            <span class="play-icon"><i class="fas fa-play"></i></span>
+                    @foreach ($videos as $key => $video)
+                        <div class="item-picture item-picture-video" data-id="{{ $key }}">
+                            <div class="item-picture-img">
+                                <img src="{{ url($video->cover) }}">
+                                <span class="play-icon"><i class="fas fa-play"></i></span>
+                            </div>
+                            <h3>{{ $video->title }}</h3>
                         </div>
-                        <h3>{{$video->title}}</h3>
-                    </div>
                     @endforeach
                 </div>
             </div>
@@ -50,14 +49,14 @@
                     <h2><span>Hình ảnh khách hàng</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
-                  @foreach($photos as $key=>$photo)
-                    <div class="item-picture item-picture-photo" data-id="{{$key}}">
-                        <div class="item-picture-img">
-                            <img src="{{url($photo->path)}}">
+                    @foreach ($photos as $key => $photo)
+                        <div class="item-picture item-picture-photo" data-id="{{ $key }}">
+                            <div class="item-picture-img">
+                                <img src="{{ url($photo->path) }}">
 
+                            </div>
+                            <h3>{{ $photo->title }}</h3>
                         </div>
-                        <h3>{{$photo->title}}</h3>
-                    </div>
                     @endforeach
                 </div>
             </div>
@@ -133,7 +132,9 @@
                             <li>Quảng cáo online bắt đầu từ đâu và làm như thế nào ?</li>
                             <li>Tự chạy quảng cáo và đi thuê đơn vị chạy quảng cáo, phương án nào tốt hơn ?</li>
                             <li>Khi nào nên đi thuê, khi nào nên tự chạy ?</li>
-                            <li>Tìm ra lý do mà Shop/ Doanh nghiệp đang lãng phí ngân sách trong quá trình chạy quảng cáo mỗi ngày mà bạn KHÔNG HỀ HAY BIẾT Tìm ra lý do mà Shop/ Doanh nghiệp đang lãng phí ngân sách trong quá trình chạy quảng cáo mỗi ngày mà bạn KHÔNG HỀ HAY BIẾT.</li>
+                            <li>Tìm ra lý do mà Shop/ Doanh nghiệp đang lãng phí ngân sách trong quá trình chạy quảng cáo
+                                mỗi ngày mà bạn KHÔNG HỀ HAY BIẾT Tìm ra lý do mà Shop/ Doanh nghiệp đang lãng phí ngân sách
+                                trong quá trình chạy quảng cáo mỗi ngày mà bạn KHÔNG HỀ HAY BIẾT.</li>
                             <li>Chia sẽ về các hình thức chạy quảng cáo online và cách làm phù hợp với ngành hàng của bạn.
                             </li>
                             <li>Trả lời và giải đáp các thắc mắc của các bạn về kinh doanh online.</li>
@@ -217,7 +218,9 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <img src="images/logo.svg">
-                        <p>Riky Marketing là công ty tư vấn, huấn luyện đào tạo Marketing Online tại Việt Nam. Hỗ trợ các Cá Nhân, Doanh Nghiệp, Nghệ Sĩ nắm bắt cơ hội kinh doanh trực tuyến và khai thác tối đa ứng dụng của Internet vào hoạt động kinh doanh.</p>
+                        <p>Riky Marketing là công ty tư vấn, huấn luyện đào tạo Marketing Online tại Việt Nam. Hỗ trợ các Cá
+                            Nhân, Doanh Nghiệp, Nghệ Sĩ nắm bắt cơ hội kinh doanh trực tuyến và khai thác tối đa ứng dụng
+                            của Internet vào hoạt động kinh doanh.</p>
                     </div>
                     <div class="col-sm-4">
                         <h3>Thông Tin liên hệ</h3>
@@ -244,36 +247,70 @@
 
     <div class="box-contact-mobile">
         <a href="#dangky" class="btn btn-primary"><i class="fas fa-user"></i> Đăng Ký</a>
-        <a href="https://zalo.me/{{$settings['hotline']}}" target="_blank" class="btn btn-danger">Zalo</a>
+        <a href="https://zalo.me/{{ $settings['hotline'] }}" target="_blank" class="btn btn-danger">Zalo</a>
     </div>
 
     <div class="popup-album popup-album-photo">
-      <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
-      <div class="bg-popup-album"></div>
-      <div class="slider-for">
-        @foreach($photos as $photo)
-        <div class="item-for"><img src="{{url($photo->path)}}"></div>
-        @endforeach()
-      </div>
-      <div class="slider-nav">
-        @foreach($photos as $photo)
-        <div class="item-nav"><img src="{{url($photo->path)}}"></div>
-        @endforeach()
-      </div>
+        <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
+        <div class="bg-popup-album"></div>
+        <div class="slider-for">
+            @foreach ($photos as $photo)
+                <div class="item-for"><img src="{{ url($photo->path) }}"></div>
+            @endforeach()
+        </div>
+        <div class="slider-nav">
+            @foreach ($photos as $photo)
+                <div class="item-nav"><img src="{{ url($photo->path) }}"></div>
+            @endforeach()
+        </div>
     </div>
 
     <div class="popup-album popup-album-video">
-      <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
-      <div class="bg-popup-album"></div>
-      <div class="slider-for">
-        @foreach($videos as $video)
-        <div class="item-for"><div class="video-wrapper"><video preload="auto" controls width="600" height="400" src="{{url($video->path)}}"></video></div></div>
-        @endforeach()
-      </div>
-      <div class="slider-nav">
-        @foreach($videos as $video)
-        <div class="item-nav"><img src="{{url($video->cover)}}"></div>
-        @endforeach()
-      </div>
+        <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
+        <div class="bg-popup-album"></div>
+        <div class="slider-for">
+            @foreach ($videos as $video)
+                <div class="item-for">
+                    <div class="video-wrapper"><video preload="auto" controls width="600" height="400"
+                            src="{{ url($video->path) }}"></video></div>
+                </div>
+            @endforeach()
+        </div>
+        <div class="slider-nav">
+            @foreach ($videos as $video)
+                <div class="item-nav"><img src="{{ url($video->cover) }}"></div>
+            @endforeach()
+        </div>
+    </div>
+
+    <div id="success_tic" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="marker">
+                    <h1 style="text-align:center;">
+                        <div class="checkmark-circle">
+                            <div class="background"></div>
+                            <div class="checkmark draw"></div>
+                        </div>
+                        <h1>
+                </div>
+                {{-- <a class="close" href="#" data-dismiss="modal">&times;</a> --}}
+                <div class="page-body">
+                    <div class="head">
+                        <h3 style="margin-top:5px;">Awesome!</h3>
+                        <h4>Your booking has been confirmed</h4>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success w-100  " data-dismiss="modal">OK</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
     </div>
 @endsection
