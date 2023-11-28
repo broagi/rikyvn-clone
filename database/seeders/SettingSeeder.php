@@ -18,14 +18,17 @@ class SettingSeeder extends Seeder
         ['key' => 'email',
         'name' => 'Email',
         'value' => 'Rikysupport@gmail.com',
+        'type' => 'text'
        ],
        ['key' => 'address',
        'name'=> 'Address',
         'value' => '123 Nguyễn Đình Chiểu, Phường 11, Quận 3, TPHCM',
+        'type' => 'text'
        ],
        ['key' => 'hotline',
        'name'=> 'Hotline',
         'value' => '123456789',
+        'type' => 'text'
        ],
        ['key' => 'welcome_video',
        'name'=> 'Welcome Video',
