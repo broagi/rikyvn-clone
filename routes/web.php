@@ -6,6 +6,8 @@ use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\VideoController;
 use App\Http\Controllers\Backend\PhotoController;
 use App\Http\Controllers\Backend\SettingController;
+use App\Http\Controllers\Backend\BackendContactController;
+
 
 
 /*
@@ -29,7 +31,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/dashboard/contacts', [ContactController::class, 'getindex'])->middleware(['auth', 'verified'])->name('contacts');
+Route::get('/dashboard/contacts', [BackendContactController::class, 'getindex'])->middleware(['auth', 'verified'])->name('contacts');
 
 /**
  * Video
@@ -67,6 +69,9 @@ Route::post('/dashboard/photo/upload', [PhotoController::class, 'upload'])->midd
 Route::get('/dashboard/settings', [SettingController::class, 'index'])->middleware(['auth', 'verified'])->name('settings');
 Route::get('/dashboard/settings/{id}/edit', [SettingController::class, 'get_update'])->middleware(['auth', 'verified']);
 Route::post('/dashboard/settings/{id}/edit', [SettingController::class, 'update'])->middleware(['auth', 'verified']);
+
+Route::get('/dashboard/contacts/{id}/delete', [BackendContactController::class, 'delete'])->middleware(['auth', 'verified']);
+
 
 
 
