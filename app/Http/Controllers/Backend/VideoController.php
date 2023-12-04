@@ -31,7 +31,7 @@ class VideoController extends Controller
     ]);
 
     if($validator->fails()) {
-      return redirect('/dashboard/video-upload')
+      return redirect('/dashboard/video/upload')
                         ->withErrors($validator)
                         ->withInput();
     }
