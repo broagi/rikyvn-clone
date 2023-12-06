@@ -273,8 +273,8 @@
                 <div class="item-for">
                     <div class="item-for-dialog">
                         <div class="video-wrapper">
-                            <video preload="metadata" controls width="600" height="400" poster="{{$video->cover}}"
-                                src="{{ url($video->path) }}">
+                            <video preload="metadata" controls width="600" height="400"
+                                poster="{{ url($video->cover) }}" src="{{ url($video->path) }}">
                             </video>
                         </div>
                     </div>
