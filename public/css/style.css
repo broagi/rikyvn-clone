@@ -620,14 +620,11 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   width: 100vw;
 }
 .slider-nav .slick-slide {
-  padding: 0 5px;
   float:none;
   display: inline-block;
   width: 118px;
 }
 .slider-nav .slick-track {
-  left: 50%;
-  transform: translate(-50%,0) !important;
   text-align: center;
 }
 .slider-nav .slick-current .item-nav img{

@@ -216,6 +216,7 @@ $(document).ready(function () {
         centerMode: true,
         focusOnSelect: true,
         variableWidth: true,
+        infinite: true
     });
     $(".close-popup").click(function () {
         $(".popup-album").removeClass("show");
