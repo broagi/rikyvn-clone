@@ -64,7 +64,11 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
     background-color: #1a2745;
 }
-
+.header.show1 {
+  padding: 15px 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  background-color: #1a2745;
+}
 .logo {
     display: block;
     float: left;
@@ -193,6 +197,29 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   font-weight: 700;
   line-height: 45px;
 }
+.title-main h4 {
+  color: #6D6E71;
+  font-size: 15px;
+  line-height: 24px;
+}
+.title-main h3 {
+  color: #000000;
+  font-size: 22px;
+  line-height: 24px;
+}
+.title-main .divide {
+  position: relative;
+  display: inline-block;
+}
+.title-main .divide:before {
+  content: ' ';
+  position: absolute;
+  bottom: -2px;
+  height: 3px;
+  background: #FF8310;
+  left: 0;
+  width: 50px;
+}
 .title-main h2 span {
   position: relative;
   display: inline-block;
@@ -296,6 +323,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   transition: all 150ms ease-in-out;
   margin: 0;
   padding: 15px 15px;
+  color: #444;
 }
 .item-picture img{
   height: 300px;
@@ -313,6 +341,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 }
 .item-picture:hover h3 {
   background-color: #eee;
+  color: #444;
   /* padding: 15px; */
 }
 .play-icon {
@@ -841,4 +870,24 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   position: absolute;
   top: -30%;
   left: 35%;
+}
+
+.main-wrapper {
+  margin-top: 82px;
+}
+
+.bg-main {
+  background-color: #F3F6F8;
+}
+
+iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 400px;
+}
+
+.whitespace-pre {
+  white-space: pre-line;
+  word-break: break-all;
+  word-wrap: break-word;
 }

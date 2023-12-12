@@ -13,6 +13,9 @@ class Video extends Model
       'path',
       'title',
       'ordering',
-      'cover'
+      'cover',
+      'embed_frame',
+      'description',
+      'slug'
   ];
 }

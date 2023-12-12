@@ -1,4 +1,4 @@
-@extends('master')
+@extends('welcome')
 @section('content')
     <div class="wrapper">
         <section class="banner">
@@ -29,7 +29,7 @@
                 <div class="title-main i-item top-show">
                     <h2><span>Video Dự Án Tiêu Biểu</span></h2>
                 </div>
-                <div class="slider-picture i-item right-show">
+                {{-- <div class="slider-picture i-item right-show">
                     @foreach ($videos as $key => $video)
                         <div class="item-picture item-picture-video" data-id="{{ $key }}">
                             <div class="item-picture-img">
@@ -39,7 +39,21 @@
                             <h3>{{ $video->title }}</h3>
                         </div>
                     @endforeach
+                </div> --}}
+                <div class="d-flex flex-wrap">
+                  @foreach ($videos as $key => $video)
+                  <a href="{{url('/video/'.$video->slug)}}" class="col-md-4 col-sm-4 col-6 item-picture item-picture-video" data-id="{{ $key }}">
+                    <div class="item-picture-img">
+                        <img src="{{ url($video->cover) }}">
+                        <span class="play-icon"><i class="fas fa-play"></i></span>
+                    </div>
+                    <h3>{{ $video->title }}</h3>
+                </a>
+                @endforeach
                 </div>
+                <div class="text-center">
+                  <a href="{{url('/video')}}" class="btn btn-primary">Xem thêm</a>
+              </div>
             </div>
         </section>
 

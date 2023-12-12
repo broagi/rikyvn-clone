@@ -12,8 +12,8 @@ class HomeController extends Controller
 {
     public function getindex() {
       $settings = Setting::all();
-      $videos = Video::all();
-      $photos = Photo::all();
+      $videos = Video::orderBy("ordering")->limit(6)->get();
+      $photos = Photo::orderBy("ordering")->get();
 
       $arr = [];
       foreach($settings as $setting) {

@@ -17,18 +17,20 @@
             <table class="table-auto shadow-lg bg-white w-full text-sm">
               <thead>
                   <tr>
-                      <th class="border-b  font-medium px-4 py-4 text-left">Name</th>
-                      <th class="border-b  font-medium px-4 py-4 text-left">#</th>
+                    <th class="border-b  font-medium px-4 py-4 text-left">Ordering</th>
+                    <th class="border-b  font-medium px-4 py-4 text-left">Name</th>
+                    <th class="border-b  font-medium px-4 py-4 text-left">#</th>
                   </tr>
               </thead>
               <tbody class="bg-white">
                   @foreach ($videos as $video)
                       <tr>
-                          <td class="border-b px-4 py-4 ">{{ $video->title }}</td>
-                          <td class="border-b px-4 py-4 w-20">
-                            <a href="/dashboard/videos/{{$video->id}}/edit"><i class="fa fa-edit cursor-pointer"></i></a>
-                            <a href="/dashboard/videos/{{$video->id}}/delete"><i class="fa fa-trash cursor-pointer"></i></a>
-                          </td>
+                        <td class="border-b px-4 py-4 ">{{ $video->ordering }}</td>
+                        <td class="border-b px-4 py-4 ">{{ $video->title }}</td>
+                        <td class="border-b px-4 py-4 w-20">
+                          <a href="/dashboard/videos/{{$video->id}}/edit"><i class="fa fa-edit cursor-pointer"></i></a>
+                          <a href="/dashboard/videos/{{$video->id}}/delete"><i class="fa fa-trash cursor-pointer"></i></a>
+                        </td>
                       </tr>
                   @endforeach
               </tbody>

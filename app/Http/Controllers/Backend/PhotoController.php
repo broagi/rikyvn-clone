@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Storage;
 class PhotoController extends Controller
 {
   public function getindex(Request $request) {
-    $photos = Photo::all();
+    $photos = Photo::orderBy("ordering")->get();
     return view('backend.photos', ["photos" => $photos]);
   }
 
@@ -27,23 +27,35 @@ class PhotoController extends Controller
   public function upload(Request $request) {
     $validator = Validator::make($request->all(), [
       'attachment' => 'file',
-      'title' => ['required']
+      'title' => ['required'],
+      'ordering' => 'nullable|numeric|min:1'
     ]);
 
     if($validator->fails()) {
-      return redirect('/dashboard/photo-upload')
+      return redirect('/dashboard/photo/upload')
                         ->withErrors($validator)
                         ->withInput();
     }
     $path = $request->file('attachment')->store('public/attachment');
     Photo::create([
       "title" => $request->get('title'),
-      "path" => Storage::url($path)
+      "path" => Storage::url($path),
+      "ordering" => $request->get('ordering')
     ]);
     return redirect()->route('photos')->with('status', 'Photo uploaded!');
   }
 
   public function update(Request $request, $id) {
+    $validator = Validator::make($request->all(), [
+      'title' => 'nullable|string',
+      'ordering' => 'nullable|numeric|min:1'
+    ]);
+
+    if($validator->fails()) {
+      return redirect('/dashboard/photo/upload')
+                        ->withErrors($validator)
+                        ->withInput();
+    }
     $photo = Photo::where('id', $id)->first();
     if (!$photo) {
       abort(404);

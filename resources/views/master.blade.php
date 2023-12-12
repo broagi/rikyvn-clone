@@ -48,20 +48,20 @@
     @yield('metadata')
 <body>
 
-    <div class="header i-item top-show">
+    <div class="header i-item top-show show1">
         <div class="container">
             <div class="logo">
-                <a href="#"><img src="{{$settings['site_logo'] ?? url('images/logo.svg')}}"></a>
+                <a href="/"><img src="{{$settings['site_logo'] ?? url('images/logo.svg')}}"></a>
             </div>
             <div class="right-header">
                 <div class="menu">
                     <ul>
-                        <li><a href="#videos"><span>Videos</span></a></li>
-                        <li><a href="#hinhanh"><span>Hình ảnh</span></a></li>
-                        <li><a href="#sumenh"><span>Sứ mệnh</span></a></li>
-                        <li><a href="#gioithieu"><span>Giới thiệu</span></a></li>
-                        <li><a href="#chuyengia"><span>Chuyên gia</span></a></li>
-                        <li><a href="#dangky" class="a-singup">Đăng ký</a></li>
+                        <li><a href="/#videos"><span>Videos</span></a></li>
+                        <li><a href="/#hinhanh"><span>Hình ảnh</span></a></li>
+                        <li><a href="/#sumenh"><span>Sứ mệnh</span></a></li>
+                        <li><a href="/#gioithieu"><span>Giới thiệu</span></a></li>
+                        <li><a href="/#chuyengia"><span>Chuyên gia</span></a></li>
+                        <li><a href="/#dangky" class="a-singup">Đăng ký</a></li>
                     </ul>
                 </div>
             </div>

@@ -36,7 +36,7 @@
                                         {{-- <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p> --}}
                                         <p id="file-upload-name"></p>
                                         @error('attachment')
-                                            <div class="alert alert-danger">{{ $errors->first('attachment') }}</div>
+                                            <div class="alert alert-danger text-red-500">{{ $errors->first('attachment') }}</div>
                                         @enderror
                                     </div>
                                 </div>
@@ -48,9 +48,20 @@
                                     <input name="title"
                                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                                     @error('title')
-                                        <div class="alert alert-danger">{{ $errors->first('title') }}</div>
+                                        <div class="alert alert-danger text-red-500">{{ $errors->first('title') }}</div>
                                     @enderror
                                 </div>
+                            </div>
+                            <div>
+                              <label for="ordering"
+                                    class="block text-sm font-medium leading-6 text-gray-900">Ordering</label>
+                                    <div>
+                                      <input name="ordering" type="number"
+                                          class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                      @error('ordering')
+                                          <div class="alert alert-danger text-red-500">{{ $errors->first('ordering') }}</div>
+                                      @enderror
+                                  </div>
                             </div>
                         </div>
                     </div>

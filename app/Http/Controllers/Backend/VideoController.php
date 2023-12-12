@@ -8,11 +8,12 @@ use App\Models\Video;
 use Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class VideoController extends Controller
 {
   public function getindex(Request $request) {
-    $videos = Video::all();
+    $videos = Video::orderBy("ordering")->get();
     return view('backend.videos', ["videos" => $videos]);
   }
 
@@ -26,8 +27,11 @@ class VideoController extends Controller
 
   public function upload(Request $request) {
     $validator = Validator::make($request->all(), [
-      'attachment' => 'file',
-      'title' => ['required']
+      // 'attachment' => 'file',
+      'title' => ['required'],
+      'ordering' => 'nullable|numeric|min:1',
+      'embed_frame' => 'required|string',
+      'description' => 'nullable|string',
     ]);
 
     if($validator->fails()) {
@@ -35,7 +39,7 @@ class VideoController extends Controller
                         ->withErrors($validator)
                         ->withInput();
     }
-    $path = $request->file('attachment')->store('public/attachment');
+    // $path = $request->file('attachment')->store('public/attachment');
 
     $cover = '';
     if ($request->hasFile('cover')) {
@@ -44,31 +48,52 @@ class VideoController extends Controller
 
     Video::create([
       "title" => $request->get('title'),
-      "path" => Storage::url($path),
+      // "path" => Storage::url($path),
+      "path" => '',
       "cover" => Storage::url($cover),
+      "ordering" => $request->get('ordering'),
+      "embed_frame"  => $request->get('embed_frame'),
+      "description" => $request->get('description'),
+      "slug" => Str::slug($request->get('title'))
     ]);
     return redirect()->route('videos')->with('status', 'Video uploaded!');
   }
 
   public function update(Request $request, $id) {
+    $validator = Validator::make($request->all(), [
+      'title' => 'nullable|string',
+      'ordering' => 'nullable|numeric|min:1',
+      'embed_frame' => 'nullable|string',
+      'description' => 'nullable|string'
+    ]);
+
+    if($validator->fails()) {
+      return redirect('/dashboard/video/upload')
+                        ->withErrors($validator)
+                        ->withInput();
+    }
+
     $video = Video::where('id', $id)->first();
     if (!$video) {
       abort(404);
     }
 
-    if ($request->hasFile('attachment')) {
-      $path = $request->file('attachment')->store('public/attachment');
-      $video->path = Storage::url($path);
-    }
+    // if ($request->hasFile('attachment')) {
+    //   $path = $request->file('attachment')->store('public/attachment');
+    //   $video->path = Storage::url($path);
+    // }
 
     if ($request->hasFile('cover')) {
       $cover = $request->file('cover')->store('public/attachment');
-      Log::info($cover);
       $video->cover = Storage::url($cover);
-      Log::info($video->cover);
     }
 
-    $video->title = $request->get('title');
+    // $video->title = $request->get('title');
+    $video->fill($request->all());
+
+    if ($request->has('title')) {
+      $video->slug = Str::slug($request->get('title'));
+    }
 
     $video->save();
     return redirect()->route('videos')->with('status', 'Video updated!');

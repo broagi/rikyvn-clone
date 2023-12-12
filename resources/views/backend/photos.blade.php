@@ -17,18 +17,20 @@
             <table class="table-auto shadow-lg bg-white w-full text-sm">
               <thead>
                   <tr>
-                      <th class="border-b  font-medium px-4 py-4 text-left">Name</th>
-                      <th class="border-b  font-medium px-4 py-4 text-left">#</th>
+                    <th class="border-b  font-medium px-4 py-4 text-left">Ordering</th>
+                    <th class="border-b  font-medium px-4 py-4 text-left">Name</th>
+                    <th class="border-b  font-medium px-4 py-4 text-left">#</th>
                   </tr>
               </thead>
               <tbody class="bg-white">
                   @foreach ($photos as $photo)
                       <tr>
-                          <td class="border-b px-4 py-4 ">{{ $photo->title }}</td>
-                          <td class="border-b px-4 py-4 w-20">
-                            <a href="/dashboard/photos/{{$photo->id}}/edit"><i class="fa fa-edit cursor-pointer"></i></a>
-                            <a href="/dashboard/photos/{{$photo->id}}/delete"><i class="fa fa-trash cursor-pointer"></i></a>
-                          </td>
+                        <td class="border-b px-4 py-4 ">{{ $photo->ordering }}</td>
+                        <td class="border-b px-4 py-4 ">{{ $photo->title }}</td>
+                        <td class="border-b px-4 py-4 w-20">
+                          <a href="/dashboard/photos/{{$photo->id}}/edit"><i class="fa fa-edit cursor-pointer"></i></a>
+                          <a href="/dashboard/photos/{{$photo->id}}/delete"><i class="fa fa-trash cursor-pointer"></i></a>
+                        </td>
                       </tr>
                   @endforeach
               </tbody>

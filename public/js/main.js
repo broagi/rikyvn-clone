@@ -31,9 +31,9 @@ $(document).ready(function () {
         onScroll();
         var windscroll = $(document).scrollTop();
         if (windscroll >= 70) {
-            $(".header").addClass("show");
+            $(".welcome-header").addClass("show");
         } else {
-            $(".header").removeClass("show");
+            $(".welcome-header").removeClass("show");
         }
     });
 
