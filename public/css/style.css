@@ -880,10 +880,17 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   background-color: #F3F6F8;
 }
 
-iframe {
+.embed-frame {
+  padding-top: 75%;
+  position: relative;
+}
+
+.embed-frame iframe {
   width: 100% !important;
   height: 100% !important;
-  min-height: 400px;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .whitespace-pre {

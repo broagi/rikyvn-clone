@@ -8,7 +8,7 @@
         @if (isset($video))
             <section class="padding-main bg-main">
                 <div class="container d-flex flex-wrap">
-                    <div class="col-sm-8 col-12">{!! $video->embed_frame !!}</div>
+                    <div class="col-sm-8 col-12"><div class="embed-frame">{!! $video->embed_frame !!}</div></div>
                     <div class="col-sm-4 col-12 i-item right-show">
                       <div class="title-main mb-4">
                           <h4>MARKETING ONLINE CÙNG CHUYÊN GIA</h4>
