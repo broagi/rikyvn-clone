@@ -15,7 +15,7 @@
                           <h3>{{$video->title}}</h3>
                           <span class="divide"></span>
                       </div>
-                      <p class="whitespace-pre">{{$video->description}}</p>
+                      <p class="whitespace-pre-line">{{$video->description}}</p>
                   </div>
 
                 </div>
