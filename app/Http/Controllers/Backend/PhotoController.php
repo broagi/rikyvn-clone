@@ -8,6 +8,7 @@ use App\Models\Photo;
 use Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
+use Intervention\Image\ImageManagerStatic as Image;
 
 class PhotoController extends Controller
 {
@@ -38,6 +39,7 @@ class PhotoController extends Controller
     }
     $path = $request->file('attachment')->store('public/attachment');
 
+    // should fire event
     $image = $request->file('attachment');
     $filename    = $image->getClientOriginalName();
     $image_resize = Image::make($image->getRealPath());
@@ -73,6 +75,7 @@ class PhotoController extends Controller
       $path = $request->file('attachment')->store('public/attachment');
       $photo->path = Storage::url($path);
 
+      // should fire event
       $image = $request->file('attachment');
       $filename    = $image->getClientOriginalName();
       $image_resize = Image::make($image->getRealPath());
