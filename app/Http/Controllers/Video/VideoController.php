@@ -9,10 +9,10 @@ use App\Models\Video;
 class VideoController extends Controller
 {
     public function get_video(Request $request, $slug = null) {
-      if (!$slug) {
-        $related_videos = Video::orderBy("ordering")->get();
-        return view('video.index')->with('related_videos', $related_videos);
-      }
+      // if (!$slug) {
+      //   $related_videos = Video::orderBy("ordering")->get();
+      //   return view('video.index')->with('related_videos', $related_videos);
+      // }
 
       $video = Video::where('primary', 1)->first();
       // if (!$video) {
