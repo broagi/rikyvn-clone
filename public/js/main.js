@@ -235,6 +235,8 @@ $(document).ready(function () {
         );
         $(".popup-album-video .slider-for").resize();
         $(".popup-album-video .slider-for").slick("setDimensions");
+        $(".popup-album-video .slider-for").slick("setPosition");
+        $(".popup-album-video .slider-nav").slick("setPosition");
     });
 
     $(".popup-album-video .slider-for").on("afterChange", () => {
@@ -252,6 +254,8 @@ $(document).ready(function () {
         );
         $(".popup-album-photo .slider-for").resize();
         $(".popup-album-photo .slider-for").slick("setDimensions");
+        $(".popup-album-photo .slider-for").slick("setPosition");
+        $(".popup-album-photo .slider-nav").slick("setPosition");
     });
 
 });
