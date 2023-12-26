@@ -127,7 +127,7 @@
       <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
       <div class="bg-popup-album"></div>
       <div class="slider-for">
-          @foreach ($videos as $video)
+          @foreach ($related_videos as $video)
               <div class="item-for">
                   <div class="item-for-dialog">
                     {!! $video->embed_frame !!}
@@ -136,7 +136,7 @@
           @endforeach()
       </div>
       <div class="slider-nav">
-          @foreach ($videos as $video)
+          @foreach ($related_videos as $video)
               <div class="item-nav"><img src="{{ url($video->cover) }}"></div>
           @endforeach()
       </div>
