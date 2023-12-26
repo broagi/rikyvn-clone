@@ -66,7 +66,7 @@
                     @foreach ($photos as $key => $photo)
                         <div class="item-picture item-picture-photo" data-id="{{ $key }}">
                             <div class="item-picture-img">
-                                <img src="{{ url($photo->path) }}">
+                                <img src="{{ $photo->thumbnail ? url($photo->thumbnail) : url($photo->path) }}">
 
                             </div>
                             <h3>{{ $photo->title }}</h3>

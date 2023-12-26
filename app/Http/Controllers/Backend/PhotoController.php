@@ -37,10 +37,18 @@ class PhotoController extends Controller
                         ->withInput();
     }
     $path = $request->file('attachment')->store('public/attachment');
+
+    $image = $request->file('attachment');
+    $filename    = $image->getClientOriginalName();
+    $image_resize = Image::make($image->getRealPath());
+    $image_resize->resize(450, 450);
+    $image_resize->save('public/attachment/' .$filename);
+
     Photo::create([
       "title" => $request->get('title'),
       "path" => Storage::url($path),
-      "ordering" => $request->get('ordering')
+      "ordering" => $request->get('ordering'),
+      "thumbnail" => Storage::url('public/attachment/' .$filename)
     ]);
     return redirect()->route('photos')->with('status', 'Photo uploaded!');
   }
@@ -52,7 +60,7 @@ class PhotoController extends Controller
     ]);
 
     if($validator->fails()) {
-      return redirect('/dashboard/photo/upload')
+      return redirect('/dashboard/photo/edit')
                         ->withErrors($validator)
                         ->withInput();
     }
@@ -64,6 +72,13 @@ class PhotoController extends Controller
     if ($request->hasFile('attachment')) {
       $path = $request->file('attachment')->store('public/attachment');
       $photo->path = Storage::url($path);
+
+      $image = $request->file('attachment');
+      $filename    = $image->getClientOriginalName();
+      $image_resize = Image::make($image->getRealPath());
+      $image_resize->resize(450, 450);
+      $image_resize->save('public/attachment/' .$filename);
+      $photo->thumbnail = Storage::url('public/attachment/' .$filename);
     }
 
     $photo->fill($request->all());

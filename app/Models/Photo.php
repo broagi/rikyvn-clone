@@ -13,5 +13,6 @@ class Photo extends Model
       'path',
       'title',
       'ordering',
+      'thumbnail'
   ];
 }
