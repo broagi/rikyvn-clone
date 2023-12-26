@@ -896,3 +896,6 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   left: 0;
   position: absolute;
 }
+.whitespace-pre-line {
+  white-space: pre-line;
+}
