@@ -42,7 +42,7 @@
                 </div> --}}
                 <div class="d-flex flex-wrap">
                   @foreach ($videos as $key => $video)
-                  <a href="{{url('/video/'.$video->slug)}}" class="col-md-4 col-sm-4 col-6 item-picture" data-id="{{ $key }}">
+                  <a href="#" class="col-md-4 col-sm-4 col-6 item-picture item-picture-video" data-id="{{ $key }}">
                     <div class="item-picture-img">
                         <img src="{{ url($video->cover) }}">
                         <span class="play-icon"><i class="fas fa-play"></i></span>
@@ -287,9 +287,7 @@
                 <div class="item-for">
                     <div class="item-for-dialog">
                         <div class="video-wrapper">
-                            <video preload="metadata" controls
-                                poster="{{ url($video->cover) }}" src="{{ url($video->path) }}">
-                            </video>
+                          <div class="embed-frame">{!! $video->embed_frame !!}</div>
                         </div>
                     </div>
                 </div>
