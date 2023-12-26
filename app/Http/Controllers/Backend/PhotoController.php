@@ -43,14 +43,16 @@ class PhotoController extends Controller
     $image = $request->file('attachment');
     $filename    = $image->getClientOriginalName();
     $image_resize = Image::make($image->getRealPath());
-    $image_resize->resize(450, 450);
-    $image_resize->save('public/attachment/' .$filename);
+    $image_resize->resize(450, null, function ($constraint) {
+      $constraint->aspectRatio();
+    });
+    $image_resize->save(public_path('/uploads/'.time(). '_' .$filename));
 
     Photo::create([
       "title" => $request->get('title'),
       "path" => Storage::url($path),
       "ordering" => $request->get('ordering'),
-      "thumbnail" => Storage::url('public/attachment/' .$filename)
+      "thumbnail" => '/uploads/'.time(). '_' .$filename
     ]);
     return redirect()->route('photos')->with('status', 'Photo uploaded!');
   }
@@ -79,9 +81,11 @@ class PhotoController extends Controller
       $image = $request->file('attachment');
       $filename    = $image->getClientOriginalName();
       $image_resize = Image::make($image->getRealPath());
-      $image_resize->resize(450, 450);
-      $image_resize->save('public/attachment/' .$filename);
-      $photo->thumbnail = Storage::url('public/attachment/' .$filename);
+      $image_resize->resize(450, null, function ($constraint) {
+        $constraint->aspectRatio();
+      });
+      $image_resize->save(public_path('/uploads/'.time(). '_' .$filename));
+      $photo->thumbnail = '/uploads/'.time(). '_' .$filename;
     }
 
     $photo->fill($request->all());
