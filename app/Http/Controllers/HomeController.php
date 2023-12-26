@@ -12,7 +12,7 @@ class HomeController extends Controller
 {
     public function getindex() {
       $settings = Setting::all();
-      $videos = Video::orderBy("ordering")->limit(6)->get();
+      $videos = Video::orderBy("ordering")->limit(12)->get();
       $photos = Photo::orderBy("ordering")->get();
 
       $arr = [];
