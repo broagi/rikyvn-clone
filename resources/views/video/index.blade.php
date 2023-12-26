@@ -39,13 +39,13 @@
             </div> --}}
                 <div class="d-flex flex-wrap">
                     @foreach ($related_videos as $key => $video)
-                          <a href="{{url('/video/'.$video->slug)}}" class="col-md-4 col-sm-4 col-6 item-picture item-picture-video" data-id="{{ $key }}">
+                          <div class="col-md-4 col-sm-4 col-6 item-picture item-picture-video" data-id="{{ $key }}">
                               <div class="item-picture-img">
                                   <img src="{{ url($video->cover) }}">
                                   <span class="play-icon"><i class="fas fa-play"></i></span>
                               </div>
                               <h3>{{ $video->title }}</h3>
-                          </a>
+                          </div>
                     @endforeach
                 </div>
             </div>
@@ -122,4 +122,23 @@
         <a href="#dangky" class="btn btn-primary"><i class="fas fa-user"></i> Đăng Ký</a>
         <a href="https://zalo.me/{{ $settings['hotline'] }}" target="_blank" class="btn btn-danger">Zalo</a>
     </div>
+
+    <div class="popup-album popup-album-video">
+      <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
+      <div class="bg-popup-album"></div>
+      <div class="slider-for">
+          @foreach ($videos as $video)
+              <div class="item-for">
+                  <div class="item-for-dialog">
+                    {!! $video->embed_frame !!}
+                  </div>
+              </div>
+          @endforeach()
+      </div>
+      <div class="slider-nav">
+          @foreach ($videos as $video)
+              <div class="item-nav"><img src="{{ url($video->cover) }}"></div>
+          @endforeach()
+      </div>
+  </div>
 @endsection
