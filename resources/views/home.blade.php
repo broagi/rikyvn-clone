@@ -286,9 +286,7 @@
             @foreach ($videos as $video)
                 <div class="item-for">
                     <div class="item-for-dialog">
-                        <div class="video-wrapper">
-                          <div class="embed-frame">{!! $video->embed_frame !!}</div>
-                        </div>
+                      {!! $video->embed_frame !!}
                     </div>
                 </div>
             @endforeach()
