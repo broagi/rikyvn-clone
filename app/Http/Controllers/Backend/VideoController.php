@@ -32,6 +32,7 @@ class VideoController extends Controller
       'ordering' => 'nullable|numeric|min:1',
       'embed_frame' => 'required|string',
       'description' => 'nullable|string',
+      'cover' => 'nullable|file|max:500'
     ]);
 
     if($validator->fails()) {
@@ -64,7 +65,8 @@ class VideoController extends Controller
       'title' => 'nullable|string',
       'ordering' => 'nullable|numeric|min:1',
       'embed_frame' => 'nullable|string',
-      'description' => 'nullable|string'
+      'description' => 'nullable|string',
+      'cover' => 'nullable|file|max:500'
     ]);
 
     if($validator->fails()) {

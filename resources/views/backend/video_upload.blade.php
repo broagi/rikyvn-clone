@@ -13,7 +13,7 @@
                         <div class="border-b border-gray-900/10 pb-12">
                             <div class="col-span-full">
                               <label for="cover-photo"
-                                  class="block text-sm font-medium leading-6 text-gray-900">Cover</label>
+                                  class="block text-sm font-medium leading-6 text-gray-900">Cover (Max: 500Kb)</label>
                               <div
                                   class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
                                   <div class="text-center">

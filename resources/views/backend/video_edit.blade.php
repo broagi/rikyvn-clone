@@ -14,7 +14,7 @@
 
                             <div class="col-span-full">
                               <label for="cover-photo"
-                                  class="block text-sm font-medium leading-6 text-gray-900">Cover</label>
+                                  class="block text-sm font-medium leading-6 text-gray-900">Cover Cover (Max: 500Kb)</label>
                                   @if ($video->cover)
                                   <img width="400" height="300" src={{url($video->cover)}}></img>
                                   @endif
