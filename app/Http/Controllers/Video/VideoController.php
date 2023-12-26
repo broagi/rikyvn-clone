@@ -20,7 +20,7 @@ class VideoController extends Controller
       // }
 
       // $related_videos = Video::where('id', '!=', $video->id)->orderBy("ordering")->get();
-      $related_videos = Video::orderBy("ordering")->get();
+      $related_videos = Video::where('primary', 0)->orderBy("ordering")->get();
 
       return view('video.index', ["video" => $video])->with('related_videos', $related_videos);
     }
