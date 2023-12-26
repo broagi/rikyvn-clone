@@ -40,7 +40,7 @@
                                       {{-- <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p> --}}
                                       <p id="cover-upload-name"></p>
                                       @error('cover')
-                                          <div class="alert alert-danger">{{ $errors->first('cover') }}</div>
+                                          <div class="alert alert-danger text-red-500">{{ $errors->first('cover') }}</div>
                                       @enderror
                                   </div>
                               </div>
@@ -53,7 +53,7 @@
                                     value="{{$video->title}}"
                                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                                     @error('title')
-                                        <div class="alert alert-danger">{{ $errors->first('title') }}</div>
+                                        <div class="alert alert-danger text-red-500">{{ $errors->first('title') }}</div>
                                     @enderror
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                   <textarea name="description" rows="5"
                                       class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" >{{$video->description}}</textarea>
                                   @error('description')
-                                      <div class="alert alert-danger">{{ $errors->first('description') }}</div>
+                                      <div class="alert alert-danger text-red-500">{{ $errors->first('description') }}</div>
                                   @enderror
                               </div>
                           </div>
@@ -76,7 +76,7 @@
                                   value="{{$video->embed_frame}}"
                                       class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                                   @error('embed_frame')
-                                      <div class="alert alert-danger">{{ $errors->first('embed_frame') }}</div>
+                                      <div class="alert alert-danger text-red-500">{{ $errors->first('embed_frame') }}</div>
                                   @enderror
                               </div>
                           </div>

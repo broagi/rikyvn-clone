@@ -70,7 +70,7 @@ class VideoController extends Controller
     ]);
 
     if($validator->fails()) {
-      return redirect('/dashboard/video/edit')
+      return redirect('/dashboard/videos/'.$id.'/edit')
                         ->withErrors($validator)
                         ->withInput();
     }
