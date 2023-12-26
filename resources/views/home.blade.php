@@ -42,13 +42,13 @@
                 </div> --}}
                 <div class="d-flex flex-wrap">
                   @foreach ($videos as $key => $video)
-                  <a href="#" class="col-md-4 col-sm-4 col-6 item-picture item-picture-video" data-id="{{ $key }}">
+                  <div class="col-md-4 col-sm-4 col-6 item-picture item-picture-video" data-id="{{ $key }}">
                     <div class="item-picture-img">
                         <img src="{{ url($video->cover) }}">
                         <span class="play-icon"><i class="fas fa-play"></i></span>
                     </div>
                     <h3>{{ $video->title }}</h3>
-                </a>
+                </div>
                 @endforeach
                 </div>
                 <div class="text-center">

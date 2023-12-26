@@ -16,6 +16,7 @@ class Video extends Model
       'cover',
       'embed_frame',
       'description',
-      'slug'
+      'slug',
+      'primary'
   ];
 }

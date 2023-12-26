@@ -86,6 +86,16 @@
                                     @enderror
                                 </div>
                             </div>
+                            <div>
+                              <label for="ordering"
+                                    class="block text-sm font-medium leading-6 text-gray-900">Video tổng hơp?</label>
+                              <div>
+                                <input type="checkbox" name="primary" />
+                                @error('primary')
+                                        <div class="alert alert-danger text-red-500">{{ $errors->first('primary') }}</div>
+                              </div>
+
+                            </div>
                         </div>
                     </div>
 

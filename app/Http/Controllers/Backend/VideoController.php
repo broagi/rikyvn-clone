@@ -55,7 +55,8 @@ class VideoController extends Controller
       "ordering" => $request->get('ordering'),
       "embed_frame"  => $request->get('embed_frame'),
       "description" => $request->get('description'),
-      "slug" => Str::slug($request->get('title'))
+      "slug" => Str::slug($request->get('title')),
+      "primary" => $request->get('primary') == 'on' ? 1 : 0
     ]);
     return redirect()->route('videos')->with('status', 'Video uploaded!');
   }
