@@ -92,10 +92,15 @@ class VideoController extends Controller
     }
 
     // $video->title = $request->get('title');
-    $video->fill($request->all());
+    // $video->fill($request->all());
+    $video->fill($request->except(['primary']));
 
     if ($request->has('title')) {
       $video->slug = Str::slug($request->get('title'));
+    }
+
+    if ($request->has('primary')) {
+      $video->primary = $request->get('primary') == 'on' ? 1 : 0;
     }
 
     $video->save();
