@@ -140,7 +140,7 @@
                     </div>
                     <div class="col-sm-6 i-item right-show">
                         <div class="title-main">
-                            <h2><span>Nội dung</span> sẽ được chia sẽ từ chuyên gia</h2>
+                            <h2>Nội dung sẽ được chia sẽ từ <span>chuyên gia</span></h2>
                         </div>
                         <ul>
                             <li>Quảng cáo online bắt đầu từ đâu và làm như thế nào ?</li>
