@@ -267,3 +267,6 @@ $(document).ready(function () {
     });
 
 });
+
+
+$('input[type=checkbox]').click(function(e) { e.target.value ===  'on' ? $(this).val('off') : $(this).val('on')})
