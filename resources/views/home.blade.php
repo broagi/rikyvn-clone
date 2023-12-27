@@ -103,8 +103,8 @@
                     </div>
                     <div class="col-sm-6 i-item right-show">
                         <div class="title-main">
-                            <h2><span>Lý do</span> tạo nên buổi gặp gỡ giữa bạn với chuyên gia </h2>
-                        </div>
+                            <h2>Lý do tạo nên buổi gặp gỡ giữa bạn với <span>chuyên gia</span></h2>
+                       </div>
                         <ul>
                             <li>Bạn đang tìm hiểu hoặc đang Kinh Doanh Online nhưng chưa biết bắt đầu từ đâu ?</li>
                             <li>Bạn có các thắc mắc về quảng cáo, muốn định hướng và cần các chuyên gia giúp đỡ giải đáp.
