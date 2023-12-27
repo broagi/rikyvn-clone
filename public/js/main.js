@@ -225,7 +225,7 @@ $(document).ready(function () {
         // $(".popup-album-video video").each(function () {
         //     $(this).get(0).pause();
         // });
-        $('iframe').each(function() {
+        $('.popup-album-video .slider-for iframe').each(function() {
           const src = this.src;
           this.src= src;
         })
@@ -248,7 +248,7 @@ $(document).ready(function () {
         // $(".popup-album-video video").each(function () {
         //     $(this).get(0).pause();
         // });
-        $('iframe').each(function() {
+        $('.popup-album-video .slider-for iframe').each(function() {
           const src = this.src;
           this.src= src;
         })
