@@ -100,8 +100,7 @@ class VideoController extends Controller
     }
 
     if ($request->has('primary')) {
-      Log::info($request->get('primary'));
-      $video->primary = $request->get('primary') == 'on' ? 1 : 0;
+      $video->primary = 1;
     } else {
       $video->primary = 0;
     }
