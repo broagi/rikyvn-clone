@@ -248,7 +248,7 @@ $(document).ready(function () {
         // $(".popup-album-video video").each(function () {
         //     $(this).get(0).pause();
         // });
-        $('.popup-album-video .slider-for iframe').each(function() {
+        $('.popup-album-video .slider-for .slick-slide:not(.slick-active) iframe').each(function() {
           const src = this.src;
           this.src= src;
         })
