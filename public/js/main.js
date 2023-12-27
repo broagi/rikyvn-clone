@@ -222,9 +222,13 @@ $(document).ready(function () {
         $(".popup-album").removeClass("show");
         $(".popup-album-video").removeClass("show");
 
-        $(".popup-album-video video").each(function () {
-            $(this).get(0).pause();
-        });
+        // $(".popup-album-video video").each(function () {
+        //     $(this).get(0).pause();
+        // });
+        $('iframe').each(function() {
+          const src = this.src;
+          this.src= src;
+        })
     });
 
     $(".item-picture-video").click(function () {
@@ -241,9 +245,13 @@ $(document).ready(function () {
 
     $(".popup-album-video .slider-for").on("afterChange", () => {
         // $(".popup-album-video .slick-active").find("video").get(0).play();
-        $(".popup-album-video video").each(function () {
-            $(this).get(0).pause();
-        });
+        // $(".popup-album-video video").each(function () {
+        //     $(this).get(0).pause();
+        // });
+        $('iframe').each(function() {
+          const src = this.src;
+          this.src= src;
+        })
     });
 
     $(".item-picture-photo").click(function () {
