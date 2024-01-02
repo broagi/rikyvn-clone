@@ -160,7 +160,7 @@
         <section class="member-home padding-main" id="chuyengia">
             <div class="container">
                 <div class="title-main title-white">
-                    <h2><span>Chuyên gia</span> sẽ kết nối <br>đến bạn là ai ?</h2>
+                    <h2>Chuyên gia sẽ kết nối <br>đến bạn là ai ?</h2>
                 </div>
                 <div class="row">
                     <div class="col-sm-6 i-item left-show">
