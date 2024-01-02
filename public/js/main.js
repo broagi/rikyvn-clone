@@ -14,8 +14,16 @@ function onScroll() {
         }
     });
 
-    ['#videos', '#hinhanh', '#sumenh', '#gioithieu', '#chuyengia', '#dangky'].forEach(id => {
+    ['#hinhanh', '#sumenh'].forEach(id => {
       if ($(id).visible()) {
+        $('.menu a[href^="/'+id+'"]').addClass('active');
+      } else {
+        $('.menu a[href^="/'+id+'"]').removeClass('active');
+      }
+    })
+
+    ['#videos','#gioithieu', '#chuyengia', '#dangky'].forEach(id => {
+      if ($(id).visible(true)) {
         $('.menu a[href^="/'+id+'"]').addClass('active');
       } else {
         $('.menu a[href^="/'+id+'"]').removeClass('active');
