@@ -79,6 +79,7 @@
     <script src="/js/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="/js/locomotive-scroll.js" type="text/javascript"></script>
+    <script src="/js/jquery.visible.js" type="text/javascript"></script>
     <script src="/js/bootstrap.js"></script>
     <script src="/js/slick.js"></script>
     <script src="/js/main.js"></script>
