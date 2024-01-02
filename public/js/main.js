@@ -13,6 +13,14 @@ function onScroll() {
             $(element).addClass("show-item");
         }
     });
+
+    ['#videos', '#hinhanh', '#sumenh', '#gioithieu', '#chuyengia', '#dangky'].forEach(id => {
+      if ($(id).visible()) {
+        $('.menu a[href^="/'+id+'"]').addClass('active');
+      } else {
+        $('.menu a[href^="/'+id+'"]').removeClass('active');
+      }
+    })
 }
 onScroll();
 $(document).ready(function () {

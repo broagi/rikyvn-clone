@@ -106,6 +106,9 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   transition:all 0.3s ease-in-out;
   padding-top: 2px;
 }
+.menu li a.active span {
+  border-bottom: 2px solid #FF8310;
+}
 .menu li a:not(.a-singup)::after {
   content: ' ';
   position: absolute;
