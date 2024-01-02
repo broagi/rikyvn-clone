@@ -90,7 +90,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="/images/logo.svg">
+                        <img src="{{$settings['site_logo'] ?? url('images/logo.svg')}}">
                         <p>Riky Marketing là công ty tư vấn, huấn luyện đào tạo Marketing Online tại Việt Nam. Hỗ trợ các Cá
                             Nhân, Doanh Nghiệp, Nghệ Sĩ nắm bắt cơ hội kinh doanh trực tuyến và khai thác tối đa ứng dụng
                             của Internet vào hoạt động kinh doanh.</p>

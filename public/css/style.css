@@ -206,6 +206,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   color: #000000;
   font-size: 22px;
   line-height: 24px;
+  text-align: justify;
 }
 .title-main .divide {
   position: relative;
@@ -898,4 +899,5 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 }
 .whitespace-pre-line {
   white-space: pre-line;
+  text-align: justify;
 }

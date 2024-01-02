@@ -27,7 +27,7 @@
         <section class="pictures-home padding-main" id="videos">
             <div class="container">
                 <div class="title-main i-item top-show">
-                    <h2><span>Video Dự Án Tiêu Biểu</span></h2>
+                    <h2><span>VIDEO DỰ ÁN TIÊU BIỂU</span></h2>
                 </div>
                 {{-- <div class="slider-picture i-item right-show">
                     @foreach ($videos as $key => $video)
@@ -60,7 +60,7 @@
         <section class="pictures-home padding-main  box-blue" id="hinhanh">
             <div class="container">
                 <div class="title-main i-item top-show">
-                    <h2><span>Hình Ảnh Hoạt Động</span></h2>
+                    <h2><span>HÌNH ẢNH HOẠT ĐỘNG</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
                     @foreach ($photos as $key => $photo)
@@ -147,8 +147,7 @@
                             <li>Tự chạy quảng cáo và đi thuê đơn vị chạy quảng cáo, phương án nào tốt hơn ?</li>
                             <li>Khi nào nên đi thuê, khi nào nên tự chạy ?</li>
                             <li>Tìm ra lý do mà Shop/ Doanh nghiệp đang lãng phí ngân sách trong quá trình chạy quảng cáo
-                                mỗi ngày mà bạn KHÔNG HỀ HAY BIẾT Tìm ra lý do mà Shop/ Doanh nghiệp đang lãng phí ngân sách
-                                trong quá trình chạy quảng cáo mỗi ngày mà bạn KHÔNG HỀ HAY BIẾT.</li>
+                                mỗi ngày mà bạn KHÔNG HỀ HAY BIẾT.</li>
                             <li>Chia sẽ về các hình thức chạy quảng cáo online và cách làm phù hợp với ngành hàng của bạn.
                             </li>
                             <li>Trả lời và giải đáp các thắc mắc của các bạn về kinh doanh online.</li>
@@ -231,7 +230,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="images/logo.svg">
+                        <img src="{{$settings['site_logo'] ?? url('images/logo.svg')}}">
                         <p>Riky Marketing là công ty tư vấn, huấn luyện đào tạo Marketing Online tại Việt Nam. Hỗ trợ các Cá
                             Nhân, Doanh Nghiệp, Nghệ Sĩ nắm bắt cơ hội kinh doanh trực tuyến và khai thác tối đa ứng dụng
                             của Internet vào hoạt động kinh doanh.</p>
