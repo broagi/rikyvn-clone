@@ -103,7 +103,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 }
 .menu li a span {
   display: block;
-  transition:all 0.3s ease-in-out;
+  /* transition:all 0.3s ease-in-out; */
   padding-top: 2px;
 }
 .menu li a.active span {
@@ -194,6 +194,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 }
 .title-main {
   margin: 0 0 60px 0;
+  position: relative;
 }
 .title-main h2 {
   font-size: 35px;
@@ -225,7 +226,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   width: 50px;
 }
 .title-main h2 span {
-  position: relative;
+  /* position: relative; */
   display: inline-block;
 }
 .title-main h2 span:before {
@@ -235,7 +236,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   height: 3px;
   background: #FF8310;
   left: 0;
-  width: 100%;
+  width: 200px;
 }
 .box-section .row {
   margin: 0;
@@ -326,7 +327,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   font-size: 17px;
   transition: all 150ms ease-in-out;
   margin: 0;
-  padding: 15px 15px;
+  padding: 15px 0;
   color: #444;
 }
 .item-picture img{
