@@ -15,7 +15,10 @@ function onScroll() {
     });
 
     $('.menu a').removeClass('active');
-    var id = ['#videos','#hinhanh','#sument','#gioithieu', '#chuyengia', '#dangky'].find((e) => $(e).visible(true));
+    let id = ['#videos','#hinhanh','#sumenh','#gioithieu', '#chuyengia', '#dangky'].find((e) => $(e).visible(false));
+    if (!id) {
+      id = ['#videos','#hinhanh','#sumenh','#gioithieu', '#chuyengia', '#dangky'].find((e) => $(e).visible(true));
+    }
     if (id) {
       $('.menu a[href^="/'+id+'"]').addClass('active');
     }
