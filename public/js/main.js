@@ -234,6 +234,7 @@ $(document).ready(function () {
       slidesToScroll: 1,
       asNavFor: ".popup-album-video .slider-for",
       centerMode: true,
+      variableWidth: true,
       focusOnSelect: true
   });
     $(".close-popup").click(function () {
@@ -255,6 +256,11 @@ $(document).ready(function () {
             "slickGoTo",
             $(this).data("id")
         );
+
+        $(".popup-album-video .slider-for").resize();
+        $(".popup-album-video .slider-for").slick("setDimensions");
+        $(".popup-album-video .slider-for").slick("setPosition");
+        $(".popup-album-video .slider-nav").slick("setPosition");
     });
 
     $(".popup-album-video .slider-for").on("afterChange", () => {
