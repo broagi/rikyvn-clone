@@ -14,22 +14,14 @@ function onScroll() {
         }
     });
 
-    ['#hinhanh', '#sumenh'].forEach(id => {
-      if ($(id).visible()) {
-        $('.menu a[href^="/'+id+'"]').addClass('active');
-      } else {
-        $('.menu a[href^="/'+id+'"]').removeClass('active');
-      }
-    })
-
-    ['#videos','#gioithieu', '#chuyengia', '#dangky'].forEach(id => {
-      if ($(id).visible(true)) {
-        $('.menu a[href^="/'+id+'"]').addClass('active');
-      } else {
-        $('.menu a[href^="/'+id+'"]').removeClass('active');
-      }
-    })
+    $('.menu a').removeClass('active');
+    var id = ['#videos','#hinhanh','#sument','#gioithieu', '#chuyengia', '#dangky'].find((e) => $(e).visible(true));
+    if (id) {
+      $('.menu a[href^="/'+id+'"]').addClass('active');
+    }
 }
+
+
 onScroll();
 $(document).ready(function () {
     if (!$(".loadlogo").hasClass("loader")) {
