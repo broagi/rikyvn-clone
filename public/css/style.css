@@ -232,11 +232,11 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 .title-main h2 span:before {
   content: ' ';
   position: absolute;
-  bottom: -2px;
+  bottom: -20px;
   height: 3px;
   background: #FF8310;
   left: 0;
-  width: 200px;
+  width: 155px;
 }
 .box-section .row {
   margin: 0;
