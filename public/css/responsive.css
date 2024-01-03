@@ -172,6 +172,9 @@
     .item-for-dialog {
       height: 50%;
     }
+    .title-main h2 span:before {
+      bottom: -10px;
+    }
 }
 @media all and (min-width: 320px) and (max-width: 768px) {
 	.item-picture img {
