@@ -230,7 +230,7 @@ $(document).ready(function () {
         infinite: true
     });
     $(".popup-album-video .slider-nav").slick({
-      slidesToShow: 8,
+      slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: ".popup-album-video .slider-for",
       centerMode: true,
