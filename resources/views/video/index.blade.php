@@ -24,7 +24,7 @@
         <section class="pictures-home padding-main" id="videos">
             <div class="container">
                 <div class="title-main i-item top-show">
-                    <h2><span>Video Dự Án Tiêu Biểu</span></h2>
+                    <h2><span>VIDEO DỰ ÁN TIÊU BIỂU</span></h2>
                 </div>
                 {{-- <div class="slider-picture i-item right-show">
                 @foreach ($videos as $key => $video)

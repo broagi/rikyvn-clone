@@ -27,7 +27,7 @@
     <meta property="og:type" content="{{ $settings['site_name'] }}" />
     <meta property="og:title" content="{{ $settings['site_name'] }}" />
     <meta property="og:description" content="{{ $settings['site_description'] }}" />
-    <meta property="og:image" content="{{$settings['site_logo'] ?? url('images/logo.svg')}}" />
+    <meta property="og:image" content="{{url('images/logo-blue.png')}}" />
 
 
     <link rel="canonical" href="<?= request()->url() ?>" />
@@ -43,7 +43,7 @@
     <meta name="DC.language" scheme="ISO639-1" content="en" />
     <meta name="DC.identifier" content="{{ request()->fullUrl() }}" />
     <meta name="DC.subject" content="{{ $settings['site_keyword'] }}" />
-    <meta name="twitter:image" content="{{$settings['site_logo'] ?? url('images/logo.svg')}}" />
+    <meta name="twitter:image" content="{{url('images/logo-blue.png')}}" />
 
     @yield('metadata')
 <body>

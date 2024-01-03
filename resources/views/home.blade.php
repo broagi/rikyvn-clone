@@ -140,7 +140,7 @@
                     </div>
                     <div class="col-sm-6 i-item right-show">
                         <div class="title-main">
-                            <h2>Nội dung sẽ được chia sẽ từ <span>chuyên gia</span></h2>
+                            <h2>Nội dung sẽ được chia sẻ từ <span>chuyên gia</span></h2>
                         </div>
                         <ul>
                             <li>Quảng cáo online bắt đầu từ đâu và làm như thế nào ?</li>
@@ -148,7 +148,7 @@
                             <li>Khi nào nên đi thuê, khi nào nên tự chạy ?</li>
                             <li>Tìm ra lý do mà Shop/ Doanh nghiệp đang lãng phí ngân sách trong quá trình chạy quảng cáo
                                 mỗi ngày mà bạn KHÔNG HỀ HAY BIẾT.</li>
-                            <li>Chia sẽ về các hình thức chạy quảng cáo online và cách làm phù hợp với ngành hàng của bạn.
+                            <li>Chia sẻ về các hình thức chạy quảng cáo online và cách làm phù hợp với ngành hàng của bạn.
                             </li>
                             <li>Trả lời và giải đáp các thắc mắc của các bạn về kinh doanh online.</li>
                         </ul>
