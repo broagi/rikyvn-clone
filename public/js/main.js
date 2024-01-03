@@ -15,9 +15,9 @@ function onScroll() {
     });
 
     $('.menu a').removeClass('active');
-    let id = ['#videos','#hinhanh','#sumenh','#gioithieu', '#chuyengia', '#dangki'].find((e) => $(e).visible(false));
+    let id = ['#videos','#hinhanh','#sumenh','#gioithieu', '#chuyengia', '#dangky'].find((e) => $(e).visible(false));
     if (!id) {
-      id = ['#videos','#hinhanh','#sumenh','#gioithieu', '#chuyengia', '#dangki'].reverse().find((e) => $(e).visible(true));
+      id = ['#videos','#hinhanh','#sumenh','#gioithieu', '#chuyengia', '#dangky'].reverse().find((e) => $(e).visible(true));
     }
     if (id) {
       $('.menu a[href^="/'+id+'"]').addClass('active');
