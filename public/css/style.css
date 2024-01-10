@@ -952,3 +952,6 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 .row-sm .col-sm-3 {
   padding: 0 10px;
 }
+.popup-album .close-popup {
+  font-size: 32px;
+}
