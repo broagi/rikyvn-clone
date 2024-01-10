@@ -24,6 +24,36 @@
                 <a href="#dangky" class="btn btn-primary intro__title-line i-item top-show">Kết nối chuyên gia</a>
             </div>
         </section>
+        <section class="box-green padding-main">
+            <div class="container">
+                <div class="row row-sm">
+                    <div class="col-md-3  i-item top-show">
+                        <div class="box-a">
+                            <span class="icon-blue"><img src="images/chart-user.svg"></span>
+                            <h3>Đào tạo - Huấn luyện Marketing Online toàn diện</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3  i-item top-show">
+                        <div class="box-a">
+                            <span class="icon-green"><img src="images/lightbulb-on.svg"></span>
+                            <h3>Cố vấn chiến lược Marketing Online</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3  i-item top-show">
+                        <div class="box-a">
+                            <span class="icon-orange"><img src="images/social-network.svg"></span>
+                            <h3>Triển khai Marketing Online trọn gói chuyên nghiệp</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3  i-item top-show">
+                        <div class="box-a">
+                            <span class="icon-dark"><img src="images/browser.svg"></span>
+                            <h3>Thiết kế website, thiết kế bộ nhận diện thương hiệu</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="pictures-home padding-main" id="videos">
             <div class="container">
                 <div class="title-main i-item top-show">
@@ -169,7 +199,7 @@
                             <h3>Coach Harry An Pham</h3>
                             <div class="staff-member">Nhà huấn luyện Digital Marketing</div>
                             <p>Khởi nguồn được đào tạo trực tiếp từ Facebook Việt Nam từ năm 2015. Nhà Huấn Luyện đã có hơn
-                                7 năm kinh nghiệm trong ngành Marketing và trên 5 năm kinh nghiệm đào tạo, huấn luyện, tư
+                                9 năm kinh nghiệm trong ngành Marketing và trên 7 năm kinh nghiệm đào tạo, huấn luyện, tư
                                 vấn cho các cá nhân, tổ chức, doanh nghiệp về Marketing Online. Hiện tại, anh đang quản lý
                                 và chạy quảng cáo cho nhiều tài khoản quảng cáo ngân sách lớn cho các doanh nghiệp lớn tại
                                 Việt Nam.</p>
