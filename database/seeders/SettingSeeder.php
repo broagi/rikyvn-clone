@@ -30,6 +30,11 @@ class SettingSeeder extends Seeder
         'value' => '123456789',
         'type' => 'text'
        ],
+       ['key' => 'zalo',
+       'name'=> 'Zalo ID',
+        'value' => '123456789',
+        'type' => 'text'
+       ],
        ['key' => 'welcome_video',
        'name'=> 'Welcome Video',
         'value' => '',
