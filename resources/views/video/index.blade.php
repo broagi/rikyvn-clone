@@ -123,6 +123,15 @@
         <a href="https://zalo.me/{{ $settings['zalo'] }}" target="_blank" class="btn btn-primary">Zalo</a>
     </div>
 
+    <div id="fixedLinks">
+      @if (isset($settings['zalo']))
+      <a href="https://zalo.me/{{ $settings['zalo'] }}" target="_blank">
+        <img src="/images/zalo.svg" alt="zalo">
+      </a>
+      @endif
+    </div>
+
+
     <div class="popup-album popup-album-video">
       <div class="close-modal close-popup"><i class="fa fa-close"></i></div>
       <div class="bg-popup-album"></div>
