@@ -961,7 +961,8 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   bottom: 36px;
   right: 16px;
   position: fixed;
-  z-index: 2s;
+  z-index: 2;
+  opacity: 0.9;
 }
 #fixedLinks .a {
   width: 60px;
