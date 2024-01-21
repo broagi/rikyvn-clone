@@ -232,7 +232,7 @@
                 <div class="title-main title-white">
                     <h2>Chuyên gia sẽ kết nối <br>đến bạn là ai ?</h2>
                 </div>
-                <div class="slider-members">
+                <div class="slider-members i-item top-show">
                     <div class="">
                         <div class="box-member">
                             <img src="images/member.png">
