@@ -937,9 +937,9 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   height: 40px;
 }
 .box-a h3 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
-  min-height: 61px;
+  min-height: 76px;
 }
 .icon-blue {
   background-color: #0085E5;
