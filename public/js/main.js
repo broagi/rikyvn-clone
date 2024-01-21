@@ -309,7 +309,6 @@ $(document).ready(function () {
     setTimeout(function(){ 
         $('.loading').addClass('hide')
     }, 3000);
-
 });
 
 
