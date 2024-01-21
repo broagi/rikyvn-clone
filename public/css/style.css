@@ -930,7 +930,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   margin-left: -45px;
   left: 50%;
   border-radius: 50%;
-  
+
 }
 .box-a span img {
   width: 40px;
@@ -955,7 +955,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 }
 .row-sm {
   margin: 0 -10px;
-  
+
 }
 .row-sm .col-sm-3 {
   padding: 0 10px;
@@ -1003,5 +1003,17 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 } 
 .loading.hide {
   height: 0;
-  
+}
+#fixedLinks {
+  border: medium;
+  visibility: visible;
+  bottom: 36px;
+  right: 16px;
+  position: fixed;
+  z-index: 2;
+  opacity: 0.9;
+}
+#fixedLinks .a {
+  width: 60px;
+  height: 60px;
 }
