@@ -297,10 +297,11 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   border-radius: 5px;
   padding: 100px 30px 30px 30px;
   margin: 120px 0 20px 0;
+  position: relative;
 }
 .box-member img {
   position: absolute;
-  top: -6px;
+  top: -111px;
   left: 50%;
   transform: translate(-50%, 0);
   height: 222px;
@@ -600,20 +601,27 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 .slick-dots li
 {
     position: relative;
-
     display: inline-block;
-
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     margin: 0;
     padding: 0;
-
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 3px;
 }
-.slick-dots li.slick-active button:before
+.slick-dots li.slick-active
 {
-    opacity: .75;
-    color: black;
+    background-color: #fff;
+}
+.slick-dots li button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 .popup-album {
   position: fixed;
@@ -929,9 +937,9 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   height: 40px;
 }
 .box-a h3 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
-  min-height: 61px;
+  min-height: 76px;
 }
 .icon-blue {
   background-color: #0085E5;
@@ -954,6 +962,48 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 }
 .popup-album .close-popup {
   font-size: 32px;
+}
+.slider-members .slick-slide > div{
+  padding: 0 10px;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms ease-in-out;
+  overflow: hidden;
+}
+.loading svg {
+  width: 225px;
+  height: 70px;
+}
+.loading svg path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: dash 4s linear alternate;
+  animation: dash 4s linear alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@keyframes dash {
+  from {
+      stroke-dashoffset: 500; fill: #FFF !important;
+      fill: #fff;
+  }
+  to {
+      stroke-dashoffset: 0; fill: #FFF !important;
+      fill: #0085E5;
+  }
+} 
+.loading.hide {
+  height: 0;
 }
 #fixedLinks {
   border: medium;

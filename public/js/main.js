@@ -82,6 +82,26 @@ $(document).ready(function () {
         ],
     });
 
+    $(".slider-members").slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: true,
+        dots: false,
+        infinite: false,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                },
+            },
+        ],
+    });
+
     $(".toogle-a").click(function () {
         $(".menu").toggleClass("show");
         $(".bg-menu").toggleClass("active");
@@ -286,6 +306,9 @@ $(document).ready(function () {
         $(".popup-album-photo .slider-nav").slick("setPosition");
     });
 
+    setTimeout(function(){ 
+        $('.loading').addClass('hide')
+    }, 3000);
 });
 
 
