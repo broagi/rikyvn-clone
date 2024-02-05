@@ -29,17 +29,23 @@ class MetadataSeeder extends Seeder
        'name'=> 'Site Keyword',
         'value' => 'Marketing, Ecommerce, Training',
         'type' => 'text'
-      ],
-      ['key' => 'site_logo',
-       'name'=> 'Site Logo',
-        'value' => '',
-        'type' => 'photo'
-    ],
-    ['key' => 'site_favicon',
-       'name'=> 'Site Favicon',
-        'value' => '',
-        'type' => 'photo'
-       ]
-        ]);
+        ],
+        [
+          'key' => 'header_script',
+          'name'=> 'Header Script',
+          'value' => 'Google Tag Script, google Manager script...',
+          'type' => 'text'
+        ],
+        ['key' => 'site_logo',
+        'name'=> 'Site Logo',
+          'value' => '',
+          'type' => 'photo'
+        ],
+        ['key' => 'site_favicon',
+          'name'=> 'Site Favicon',
+            'value' => '',
+            'type' => 'photo'
+        ]
+      ]);
     }
 }

@@ -45,6 +45,9 @@
     <meta name="DC.subject" content="{{ $settings['site_keyword'] }}" />
     <meta name="twitter:image" content="{{url('images/logo-blue.png')}}" />
 
+    @if(isset($settings['header_script']))
+    {{ $settings['header_script'] }}
+    @endif
     @yield('metadata')
 <body>
 
