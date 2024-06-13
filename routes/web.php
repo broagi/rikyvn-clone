@@ -26,7 +26,8 @@ use App\Http\Controllers\Backend\SettingController;
 Route::get('/', [HomeController::class, 'getindex']);
 Route::get('/video/{slug}', 'App\Http\Controllers\Video\VideoController@get_video');
 Route::get('/video', 'App\Http\Controllers\Video\VideoController@get_video');
-
+Route::get('/portifolio', 'App\Http\Controllers\Portifolio\PortifolioController@index');
+Route::get('/portifolio/{id}', 'App\Http\Controllers\Portifolio\PortifolioController@view');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
