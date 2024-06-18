@@ -31,7 +31,7 @@
                     <img src={{Storage::url($portifolio->thumbnail)}} atl="" />
                   </div>
                   <div class="item-portfolio-txt">
-                    <h3 data-text="Him Paper">{{$portifolio->title}}</h3>
+                    <h3 data-text="{{$portifolio->title}}">{{$portifolio->title}}</h3>
                     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="1em" height="1em" >
                       <path fill="currentcolor" class="line-color" d="M0,12A12,12,0,1,0,12,0,12.013,12.013,0,0,0,0,12Zm22,0A10,10,0,1,1,12,2,10.011,10.011,0,0,1,22,
                       12ZM13.121,6.293a1,1,0,0,0,0,1.414L16.413,11,6,11.007a1,1,0,1,0,0,2L16.414,13l-3.293,3.293a1,1,0,1,0,1.389,

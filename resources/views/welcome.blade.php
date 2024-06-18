@@ -56,6 +56,7 @@
             <div class="right-header">
                 <div class="menu">
                     <ul>
+                        <li><a href="/portifolio"><span>Portfolio</span></a></li>
                         <li><a href="/#videos"><span>Videos</span></a></li>
                         <li><a href="/#hinhanh"><span>Hình ảnh</span></a></li>
                         <li><a href="/#sumenh"><span>Sứ mệnh</span></a></li>
