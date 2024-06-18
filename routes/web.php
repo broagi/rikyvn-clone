@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\VideoController;
+use App\Http\Controllers\Backend\PortifolioController;
 use App\Http\Controllers\Backend\PhotoController;
 use App\Http\Controllers\Backend\SettingController;
 
@@ -65,7 +66,19 @@ Route::get('/dashboard/photos/{id}/delete', [PhotoController::class, 'delete'])-
 
 Route::post('/dashboard/photo/upload', [PhotoController::class, 'upload'])->middleware(['auth', 'verified']);
 
-/**s
+/**
+ * Portifolio
+ */
+Route::get('/dashboard/portifolios', [PortifolioController::class, 'getindex'])->middleware(['auth', 'verified'])->name('portifolios');
+Route::get('/dashboard/portifolios/upload', function () {
+  return view('backend.portifolio.add');
+})->middleware(['auth', 'verified']);
+Route::get('/dashboard/portifolios/{id}/edit', [PortifolioController::class, 'get_update'])->middleware(['auth', 'verified']);
+Route::post('/dashboard/portifolios/{id}/edit', [PortifolioController::class, 'update'])->middleware(['auth', 'verified']);
+Route::get('/dashboard/portifolios/{id}/delete', [PortifolioController::class, 'delete'])->middleware(['auth', 'verified']);
+Route::post('/dashboard/portifolios/upload', [PortifolioController::class, 'upload'])->middleware(['auth', 'verified']);
+
+/**
  * Setting
  */
 Route::get('/dashboard/settings', [SettingController::class, 'index'])->middleware(['auth', 'verified'])->name('settings');

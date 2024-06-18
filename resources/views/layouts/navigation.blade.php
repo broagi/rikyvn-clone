@@ -19,15 +19,18 @@
                     <x-nav-link class="text-white hover:text-white" :href="route('contacts')" :active="request()->routeIs('contacts')">
                         {{ __('Contact') }}
                     </x-nav-link>
+                    <x-nav-link class="text-white hover:text-white" :href="route('portifolios')" :active="request()->routeIs('portifolios')">
+                      {{ __('Portifolios') }}
+                    </x-nav-link>
                     <x-nav-link class="text-white hover:text-white" :href="route('videos')" :active="request()->routeIs('videos')">
                       {{ __('Video') }}
-                  </x-nav-link>
-                  <x-nav-link class="text-white hover:text-white" :href="route('photos')" :active="request()->routeIs('photos')">
-                    {{ __('Photo') }}
-                </x-nav-link>
-                <x-nav-link class="text-white hover:text-white" :href="route('settings')" :active="request()->routeIs('settings')">
-                  {{ __('Settings') }}
-              </x-nav-link>
+                    </x-nav-link>
+                    <x-nav-link class="text-white hover:text-white" :href="route('photos')" :active="request()->routeIs('photos')">
+                        {{ __('Photo') }}
+                    </x-nav-link>
+                    <x-nav-link class="text-white hover:text-white" :href="route('settings')" :active="request()->routeIs('settings')">
+                      {{ __('Settings') }}
+                    </x-nav-link>
                 </div>
             </div>
 

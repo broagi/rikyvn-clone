@@ -727,6 +727,9 @@ select {
   white-space: nowrap;
   border-width: 0;
 }
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
 }
@@ -964,6 +967,11 @@ select {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
 }
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -981,9 +989,6 @@ select {
 }
 .overflow-hidden {
   overflow: hidden;
-}
-.whitespace-pre {
-  white-space: pre;
 }
 .whitespace-pre-line {
   white-space: pre-line;

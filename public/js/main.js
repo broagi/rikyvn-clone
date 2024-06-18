@@ -145,6 +145,10 @@ $(document).ready(function () {
         $("#cover-upload-name").html(e.target.files[0].name);
     });
 
+    $(".form-item-upload").change(function (e) {
+        $(`.form-item-upload-filename.${$(this).attr('name')}`).html(e.target.files[0].name);
+    });
+
     $("#contact-form").submit((e) => {
         e.preventDefault();
         fetch("/api/contact", {
