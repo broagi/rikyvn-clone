@@ -16,14 +16,14 @@ class CreatePortifolioTable extends Migration
         Schema::create('portifolio', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('thumbnail');
-            $table->string('image1');
-            $table->string('image2');
-            $table->string('image3');
-            $table->string('color1')->default('#fff');
-            $table->string('color2')->default('#000');
-            $table->string('link');
-            $table->unsignedInteger('ordering')->default(1);
+            $table->string('thumbnail')->nullable();
+            $table->string('image1')->nullable();
+            $table->string('image2')->nullable();
+            $table->string('image3')->nullable();
+            $table->string('color1')->default('#fff')->nullable();
+            $table->string('color2')->default('#000')->nullable();
+            $table->string('link')->nullable();
+            $table->unsignedInteger('ordering')->default(1)->nullable();
             $table->timestamps();
         });
     }
