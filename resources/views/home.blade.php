@@ -130,7 +130,7 @@
         <section class="pictures-home padding-main  box-blue" id="hinhanh">
             <div class="container">
                 <div class="title-main i-item top-show">
-                    <h2><span>Hình ảnh hoặt động</span></h2>
+                    <h2><span>Hình ảnh hoạt động</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
                     @foreach ($photos as $key => $photo)
