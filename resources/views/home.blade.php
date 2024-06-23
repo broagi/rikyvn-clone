@@ -60,7 +60,7 @@
                 </svg></div>
             <div class="txt-banner">
                 {{-- <div class="box-slogan intro__title-line i-item top-show">GẶP MẶT - KẾT NỐI - ĐỊNH HƯỚNG</div> --}}
-                <h1 class="intro__title-line i-item top-show">MARKETING ONLINE CÙNG CHUYÊN GIA</h1>
+                <h1 class="intro__title-line i-item top-show"><span>MARKETING ONLINE</span> CÙNG CHUYÊN GIA</h1>
                 <a href="#dangky" class="btn btn-primary intro__title-line i-item top-show">Kết nối chuyên gia</a>
             </div>
         </section>
@@ -97,7 +97,7 @@
         <section class="pictures-home padding-main" id="videos">
             <div class="container">
                 <div class="title-main i-item top-show">
-                    <h2><span>VIDEO DỰ ÁN TIÊU BIỂU</span></h2>
+                    <h2><span>Video dự án tiêu biểu</span></h2>
                 </div>
                 {{-- <div class="slider-picture i-item right-show">
                     @foreach ($videos as $key => $video)
@@ -130,7 +130,7 @@
         <section class="pictures-home padding-main  box-blue" id="hinhanh">
             <div class="container">
                 <div class="title-main i-item top-show">
-                    <h2><span>HÌNH ẢNH HOẠT ĐỘNG</span></h2>
+                    <h2><span>Hình ảnh hoặt động</span></h2>
                 </div>
                 <div class="slider-picture i-item right-show">
                     @foreach ($photos as $key => $photo)

@@ -6,8 +6,9 @@
 @section('content')
     <div class="main-wrapper">
       <div class="banner-website">
-        <div class="banner_svg_linea"></div>
-        <div>
+        <img class="shape dots" src="images/slider-dots.png" alt="Shape">
+        <!-- <div class="banner_svg_linea"></div> -->
+        <div class="banner-website-txt">
           <h2>Khách hàng của chúng tôi</h2>
           <p>Với đội ngũ nhân viên chuyên nghiệp Khách hàng luôn luôn tin tưởng trên mọi lĩnh vực</p>
         </div>

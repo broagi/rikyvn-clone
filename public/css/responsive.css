@@ -214,6 +214,21 @@
     #fixedLinks {
       bottom: 75px;
     }
+    .banner-website {
+      height: 500px;
+      padding-top: 40px;
+      background-image:url('/images/portfolio/banner1.jpg');
+    }
+    .banner-website h2 {
+      font-size: 30px;
+    }
+    .banner-website p {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    .main-wrapper {
+      margin-top: 45px;
+    }
 }
 @media all and (min-width: 320px) and (max-width: 768px) {
 	.item-picture img {

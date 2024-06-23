@@ -16,7 +16,7 @@ body {
   background-color: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+    font-weight: 900;
 }
 a, a:hover {
     text-decoration: none;
@@ -176,8 +176,13 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 }
 .txt-banner h1 {
   font-weight: 800;
-  font-size: 50px;
+  font-size: 55px;
   margin: 0 0 20px 0;
+}
+.txt-banner h1 span {
+  background: -webkit-linear-gradient(45deg, #00B3DB, #037AE9 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn {
@@ -197,7 +202,7 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   position: relative;
 }
 .title-main h2 {
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 700;
   line-height: 45px;
 }
@@ -433,8 +438,8 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
 }
 .signup-home h3 {
   font-weight: bold;
-  text-transform: uppercase;
   color: #fff;
+  font-size: 40px;
 }
 .form-sign {
   width: 600px;
@@ -1209,27 +1214,32 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   animation: strokeInOut 6s linear infinite;
 }
 .banner-website {
-  height: 80vh;
+  height: 800px;
   padding-bottom: 70px;
   background-color: #1a2745;
   display: flex;
-  width: 100%;
   color: #fff;
   justify-content: center;
-  align-items: center;
   position: relative;
   overflow: hidden;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  background-position: center;
+  background-image:url('/images/portfolio/banner.jpg');
+}
+.banner-website-txt {
+  max-width: 90%;
+  width: 700px;
 }
 .banner-website h2 {
   background: -webkit-linear-gradient(45deg, #00B3DB, #037AE9 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-  font-size: 40px;
+  font-size: 50px;
 }
 .banner-website p {
-  max-width: 90%;
   font-size: 22px;
   line-height: 30px;
 }
@@ -1255,14 +1265,14 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   text-transform: uppercase;
 }
 .line-title {
-  font-size: 8vw;
+  font-size: 5vw;
   font-weight: 900;
   line-height: 1;
   display: block;
   padding: 0 2vw;
   margin: 0;
   white-space: nowrap;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 1px #fff;
   -webkit-text-fill-color: transparent;
   color: transparent;
   
@@ -1290,20 +1300,36 @@ body, html {scrollbar-color: #aaa #f1f1f1;scrollbar-width: thin;}
   }
 }
 .banner_svg_linea {
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-filter: blur(200px);
+    filter: blur(200px);
+    width: 700px;
+    height: 700px;
+    background: #0055d4;
+    line-height: 700px;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transform: translate(-30%, -50%);
+    -ms-transform: translate(-30%, -50%);
+    transform: translate(-30%, -50%);
+}
+.shape.dots {
+  top: 10%;
+  left: 5%;
+  max-width: 10%;
+  -webkit-animation: rotated_circle 30s infinite;
+  animation: rotated_circle 30s infinite;
   position: absolute;
-  width: 938px;
-  height: 938px;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 100%;
-  background: -o-linear-gradient(315deg, #347c6b 46.07%, rgba(53, 52, 124, 0) 91.91%);
-  background: linear-gradient(135deg, #347c6b 46.07%, rgba(53, 52, 124, 0) 91.91%);
-  -webkit-filter: blur(150px);
-  filter: blur(150px);
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  pointer-events: none;
+}
+@keyframes rotated_circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
