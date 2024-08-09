@@ -12,14 +12,14 @@
           <h2>Khách hàng của chúng tôi</h2>
           <p>Với đội ngũ nhân viên chuyên nghiệp Khách hàng luôn luôn tin tưởng trên mọi lĩnh vực</p>
         </div>
-        <div class="title-ani">
+        <!-- <div class="title-ani">
           <div class="line-title line-1">
               Khách hàng của chúng tôi
           </div>
           <div class="line-title line-2">
               Khách hàng của chúng tôi
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="content-inner">
         <div class="container">
